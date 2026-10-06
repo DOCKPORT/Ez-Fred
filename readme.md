@@ -1,10 +1,8 @@
-<div style="text-align: center;">
-  <div style="background-color: #f0f0f0; padding: 20px; border-radius: 12px; display: inline-block;">
-    <img src="logo/FRED_Logo_Home_Page.svg" alt="ez-fred" width="320">
-  </div>
-</div>
+<p align="center">
+  <img src="logo/FRED_Logo_Home_Page_a.svg" alt="ez-fred">
+</p>
 
-## `Repo in early development`
+`Repo in early development`
 
 # Ez-Fred
 
