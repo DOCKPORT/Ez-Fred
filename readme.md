@@ -1,4 +1,10 @@
-`Repo in early development`
+<div style="text-align: center;">
+  <div style="background-color: #f0f0f0; padding: 20px; border-radius: 12px; display: inline-block;">
+    <img src="logo/FRED_Logo_Home_Page.svg" alt="ez-fred" width="320">
+  </div>
+</div>
+
+## `Repo in early development`
 
 # Ez-Fred
 
