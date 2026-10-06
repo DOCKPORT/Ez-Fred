@@ -9,7 +9,7 @@ import requests
 # --- PATH RESOLUTION ---
 script_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.abspath(os.path.join(script_dir, ".."))
-DATA_FILE = os.path.join(project_root, "Data", "data.json")
+DATA_FILE = os.path.join(project_root, "Data", "series.json")
 if script_dir not in sys.path:
     sys.path.insert(0, script_dir)
 
@@ -62,7 +62,7 @@ class FredEconFetch:
     """
     FRED_BASE_URL = "https://api.stlouisfed.org/fred/series/observations"
     REQUEST_TIMEOUT = (5, 10)
-    YOY_WINDOW_DAYS = 400
+    YOY_WINDOW_DAYS = 550
 
     # Error code constants
     ERROR_KEY_MISSING = "KEY_MISSING"
@@ -185,7 +185,7 @@ class FredEconFetch:
                             val = latest_val - prev_val
                         
                         yoy_result = {
-                            "date": latest_date_str,
+                            "date": prev_obs["date"],
                             "value": f"{val:.6f}"
                         }
                 except Exception:  # noqa: BLE001, S110
