@@ -1,0 +1,261 @@
+{
+  "meta": {
+    "generated_utc": "2026-10-06T19:05:18Z",
+    "source": "https://fred.stlouisfed.org/",
+    "series_count": 18
+  },
+  "series": {
+    "DFEDTARU": {
+      "name": "Fed Funds Upper Target",
+      "prefix": "",
+      "suffix": "%",
+      "yoy_type": "ch1",
+      "latest": {
+        "date": "2026-10-06",
+        "value": "4"
+      },
+      "yoy": {
+        "date": "2026-10-06",
+        "value": "-0.250000"
+      }
+    },
+    "FEDFUNDS": {
+      "name": "Fed Funds Effective Rate",
+      "prefix": "",
+      "suffix": "%",
+      "yoy_type": "ch1",
+      "latest": {
+        "date": "2026-09-01",
+        "value": "3.75"
+      },
+      "yoy": {
+        "date": "2026-09-01",
+        "value": "-0.470000"
+      }
+    },
+    "DFEDTARL": {
+      "name": "Fed Funds Lower Target",
+      "prefix": "",
+      "suffix": "%",
+      "yoy_type": "ch1",
+      "latest": {
+        "date": "2026-10-06",
+        "value": "3.75"
+      },
+      "yoy": {
+        "date": "2026-10-06",
+        "value": "-0.250000"
+      }
+    },
+    "CPIAUCSL": {
+      "name": "Consumer Price Index",
+      "prefix": "",
+      "suffix": "",
+      "yoy_type": "pc1",
+      "latest": {
+        "date": "2026-08-01",
+        "value": "334.131"
+      },
+      "yoy": {
+        "date": "2026-08-01",
+        "value": "3.048929"
+      }
+    },
+    "PPIFIS": {
+      "name": "Producer Price Index",
+      "prefix": "",
+      "suffix": "",
+      "yoy_type": "pc1",
+      "latest": {
+        "date": "2026-08-01",
+        "value": "157.411"
+      },
+      "yoy": {
+        "date": "2026-08-01",
+        "value": "4.769543"
+      }
+    },
+    "PCEPILFE": {
+      "name": "Core PCE Price Index",
+      "prefix": "",
+      "suffix": "",
+      "yoy_type": "pc1",
+      "latest": {
+        "date": "2026-08-01",
+        "value": "130.455"
+      },
+      "yoy": {
+        "date": "2026-08-01",
+        "value": "2.769025"
+      }
+    },
+    "DGS2": {
+      "name": "US 2-Year Bond Yield",
+      "prefix": "",
+      "suffix": "%",
+      "yoy_type": "ch1",
+      "latest": {
+        "date": "2026-10-02",
+        "value": "4.83"
+      },
+      "yoy": {
+        "date": "2026-10-02",
+        "value": "1.280000"
+      }
+    },
+    "DGS10": {
+      "name": "US 10-Year Bond Yield",
+      "prefix": "",
+      "suffix": "%",
+      "yoy_type": "ch1",
+      "latest": {
+        "date": "2026-10-02",
+        "value": "5.28"
+      },
+      "yoy": {
+        "date": "2026-10-02",
+        "value": "1.180000"
+      }
+    },
+    "DGS30": {
+      "name": "US 30-Year Bond Yield",
+      "prefix": "",
+      "suffix": "%",
+      "yoy_type": "ch1",
+      "latest": {
+        "date": "2026-10-02",
+        "value": "5.63"
+      },
+      "yoy": {
+        "date": "2026-10-02",
+        "value": "0.940000"
+      }
+    },
+    "VIXCLS": {
+      "name": "CBOE Volatility Index (VIX)",
+      "prefix": "",
+      "suffix": "",
+      "yoy_type": "pc1",
+      "latest": {
+        "date": "2026-10-05",
+        "value": "15.52"
+      },
+      "yoy": {
+        "date": "2026-10-05",
+        "value": "-5.192425"
+      }
+    },
+    "STLFSI4": {
+      "name": "Fed Financial Stress Index",
+      "prefix": "",
+      "suffix": "",
+      "yoy_type": "ch1",
+      "latest": {
+        "date": "2026-09-25",
+        "value": "-0.8074"
+      },
+      "yoy": {
+        "date": "2026-09-25",
+        "value": "-0.271400"
+      }
+    },
+    "UMCSENT": {
+      "name": "Consumer Sentiment Index",
+      "prefix": "",
+      "suffix": "",
+      "yoy_type": "pc1",
+      "latest": {
+        "date": "2026-08-01",
+        "value": "51.7"
+      },
+      "yoy": {
+        "date": "2026-08-01",
+        "value": "-6.170599"
+      }
+    },
+    "DCOILBRENTEU": {
+      "name": "Brent Crude Oil",
+      "prefix": "$",
+      "suffix": "",
+      "yoy_type": "pc1",
+      "latest": {
+        "date": "2026-09-29",
+        "value": "113.96"
+      },
+      "yoy": {
+        "date": "2026-09-29",
+        "value": "65.159420"
+      }
+    },
+    "PCOPPUSDM": {
+      "name": "Copper Global Price",
+      "prefix": "$",
+      "suffix": "",
+      "yoy_type": "pc1",
+      "latest": {
+        "date": "2026-07-01",
+        "value": "13542.82086956522"
+      },
+      "yoy": {
+        "date": "2026-07-01",
+        "value": "35.499032"
+      }
+    },
+    "PALUMUSDM": {
+      "name": "Aluminum Global Price",
+      "prefix": "$",
+      "suffix": "",
+      "yoy_type": "pc1",
+      "latest": {
+        "date": "2026-07-01",
+        "value": "3158.265"
+      },
+      "yoy": {
+        "date": "2026-07-01",
+        "value": "18.978711"
+      }
+    },
+    "SP500": {
+      "name": "S&P 500 Index",
+      "prefix": "",
+      "suffix": "",
+      "yoy_type": "pc1",
+      "latest": {
+        "date": "2026-10-05",
+        "value": "7773.95"
+      },
+      "yoy": {
+        "date": "2026-10-05",
+        "value": "15.335713"
+      }
+    },
+    "NASDAQ100": {
+      "name": "NASDAQ 100 Index",
+      "prefix": "",
+      "suffix": "",
+      "yoy_type": "pc1",
+      "latest": {
+        "date": "2026-10-05",
+        "value": "31076.44"
+      },
+      "yoy": {
+        "date": "2026-10-05",
+        "value": "24.412456"
+      }
+    },
+    "DJIA": {
+      "name": "Dow Jones Ind. Avg.",
+      "prefix": "",
+      "suffix": "",
+      "yoy_type": "pc1",
+      "latest": {
+        "date": "2026-10-05",
+        "value": "51267.9"
+      },
+      "yoy": {
+        "date": "2026-10-05",
+        "value": "9.793196"
+      }
+    }
+  }
+}
