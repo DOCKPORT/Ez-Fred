@@ -26,8 +26,16 @@ FRED_SERIES_CONFIG = {
     "PCEPILFE": {"name": "Core PCE Price Index", "yoy_type": "pc1", "prefix": "", "suffix": ""},
     
     # 3. US Treasury Yields
+    "DGS1MO": {"name": "US 1-Month Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
+    "DGS3MO": {"name": "US 3-Month Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
+    "DGS6MO": {"name": "US 6-Month Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
+    "DGS1": {"name": "US 1-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
     "DGS2": {"name": "US 2-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
+    "DGS3": {"name": "US 3-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
+    "DGS5": {"name": "US 5-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
+    "DGS7": {"name": "US 7-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
     "DGS10": {"name": "US 10-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
+    "DGS20": {"name": "US 20-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
     "DGS30": {"name": "US 30-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
     
     # 4. Sentiment
@@ -37,6 +45,7 @@ FRED_SERIES_CONFIG = {
     
     # 5. Commodities
     "DCOILBRENTEU": {"name": "Brent Crude Oil", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
+    "DCOILWTICO": {"name": "WTI Crude Oil", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
     "PCOPPUSDM": {"name": "Copper Global Price", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
     "PALUMUSDM": {"name": "Aluminum Global Price", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
     
