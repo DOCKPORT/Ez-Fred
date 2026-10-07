@@ -1,7 +1,7 @@
 {
   "meta": {
     "category": "Monetary Policy",
-    "generated_utc": "2026-10-07T20:59:15Z",
+    "generated_utc": "2026-10-07T21:48:10Z",
     "source": "https://fred.stlouisfed.org/",
     "series_count": 3
   },
@@ -20,18 +20,18 @@
         "value": "-0.250000"
       }
     },
-    "FEDFUNDS": {
-      "name": "Fed Funds Effective Rate",
+    "EFFR": {
+      "name": "Effective Federal Funds Rate",
       "prefix": "",
       "suffix": "%",
       "yoy_type": "ch1",
       "latest": {
-        "date": "2026-09-01",
-        "value": "3.75"
+        "date": "2026-10-06",
+        "value": "3.88"
       },
       "yoy": {
-        "date": "2025-09-01",
-        "value": "-0.470000"
+        "date": "2025-10-06",
+        "value": "-0.210000"
       }
     },
     "DFEDTARL": {

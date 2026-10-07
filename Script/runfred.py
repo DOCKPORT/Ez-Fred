@@ -20,7 +20,7 @@ FRED_SERIES_CONFIG = {
         "name": "Monetary Policy",
         "series": {
             "DFEDTARU": {"name": "Fed Funds Upper Target", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-            "FEDFUNDS": {"name": "Fed Funds Effective Rate", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
+            "EFFR": {"name": "Effective Federal Funds Rate", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
             "DFEDTARL": {"name": "Fed Funds Lower Target", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
         },
     },
@@ -30,6 +30,8 @@ FRED_SERIES_CONFIG = {
             "CPIAUCSL": {"name": "Consumer Price Index", "yoy_type": "pc1", "prefix": "", "suffix": ""},
             "PPIFIS": {"name": "Producer Price Index", "yoy_type": "pc1", "prefix": "", "suffix": ""},
             "PCEPILFE": {"name": "Core PCE Price Index", "yoy_type": "pc1", "prefix": "", "suffix": ""},
+            "CPILFESL": {"name": "Core CPI", "yoy_type": "pc1", "prefix": "", "suffix": ""},
+            "PCEPI": {"name": "PCE Price Index", "yoy_type": "pc1", "prefix": "", "suffix": ""},
         },
     },
     "ustreasuries": {
@@ -61,8 +63,11 @@ FRED_SERIES_CONFIG = {
         "series": {
             "DCOILBRENTEU": {"name": "Brent Crude Oil", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
             "DCOILWTICO": {"name": "WTI Crude Oil", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
+            "GASREGW": {"name": "US Gasoline Price", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
             "PCOPPUSDM": {"name": "Copper Global Price", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
             "PALUMUSDM": {"name": "Aluminum Global Price", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
+            "PZINCUSDM": {"name": "Zinc Global Price", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
+            "PNICKUSDM": {"name": "Nickel Global Price", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
         },
     },
     "equities": {
@@ -71,6 +76,7 @@ FRED_SERIES_CONFIG = {
             "SP500": {"name": "S&P 500 Index", "yoy_type": "pc1", "prefix": "", "suffix": ""},
             "NASDAQ100": {"name": "NASDAQ 100 Index", "yoy_type": "pc1", "prefix": "", "suffix": ""},
             "DJIA": {"name": "Dow Jones Ind. Avg.", "yoy_type": "pc1", "prefix": "", "suffix": ""},
+            "NIKKEI225": {"name": "Nikkei 225", "yoy_type": "pc1", "prefix": "", "suffix": ""},
         },
     },
 }

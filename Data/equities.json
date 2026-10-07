@@ -1,9 +1,9 @@
 {
   "meta": {
     "category": "Equity Indexes",
-    "generated_utc": "2026-10-07T20:59:15Z",
+    "generated_utc": "2026-10-07T21:48:10Z",
     "source": "https://fred.stlouisfed.org/",
-    "series_count": 3
+    "series_count": 4
   },
   "series": {
     "SP500": {
@@ -46,6 +46,20 @@
       "yoy": {
         "date": "2025-10-06",
         "value": "10.335824"
+      }
+    },
+    "NIKKEI225": {
+      "name": "Nikkei 225",
+      "prefix": "",
+      "suffix": "",
+      "yoy_type": "pc1",
+      "latest": {
+        "date": "2026-10-07",
+        "value": "70035.71"
+      },
+      "yoy": {
+        "date": "2025-10-07",
+        "value": "46.057194"
       }
     }
   }

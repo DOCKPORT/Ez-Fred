@@ -1,9 +1,9 @@
 {
   "meta": {
     "category": "Commodities",
-    "generated_utc": "2026-10-07T20:59:15Z",
+    "generated_utc": "2026-10-07T21:48:10Z",
     "source": "https://fred.stlouisfed.org/",
-    "series_count": 4
+    "series_count": 7
   },
   "series": {
     "DCOILBRENTEU": {
@@ -34,6 +34,20 @@
         "value": "54.008641"
       }
     },
+    "GASREGW": {
+      "name": "US Gasoline Price",
+      "prefix": "$",
+      "suffix": "",
+      "yoy_type": "pc1",
+      "latest": {
+        "date": "2026-10-05",
+        "value": "4.354"
+      },
+      "yoy": {
+        "date": "2025-10-06",
+        "value": "39.372599"
+      }
+    },
     "PCOPPUSDM": {
       "name": "Copper Global Price",
       "prefix": "$",
@@ -60,6 +74,34 @@
       "yoy": {
         "date": "2025-07-01",
         "value": "21.174812"
+      }
+    },
+    "PZINCUSDM": {
+      "name": "Zinc Global Price",
+      "prefix": "$",
+      "suffix": "",
+      "yoy_type": "pc1",
+      "latest": {
+        "date": "2026-07-01",
+        "value": "3593.775"
+      },
+      "yoy": {
+        "date": "2025-07-01",
+        "value": "30.088413"
+      }
+    },
+    "PNICKUSDM": {
+      "name": "Nickel Global Price",
+      "prefix": "$",
+      "suffix": "",
+      "yoy_type": "pc1",
+      "latest": {
+        "date": "2026-07-01",
+        "value": "16632.36136363636"
+      },
+      "yoy": {
+        "date": "2025-07-01",
+        "value": "10.631506"
       }
     }
   }

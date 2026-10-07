@@ -27,17 +27,19 @@ One JSON file per category, served via raw.githubusercontent.com:
 
 ## Data Series
 
-The repo fetches 27 series from FRED, split into one JSON file per category. Each entry stores the latest value and the value from one year ago.
+The repo fetches 33 series from FRED, split into one JSON file per category. Each entry stores the latest value and the value from one year ago.
 
 ### Monetary Policy (monetary.json)
 - DFEDTARU — Fed Funds Upper Target
-- FEDFUNDS — Fed Funds Effective Rate
+- EFFR — Effective Federal Funds Rate
 - DFEDTARL — Fed Funds Lower Target
 
 ### Inflation (inflation.json)
 - CPIAUCSL — Consumer Price Index
 - PPIFIS — Producer Price Index
 - PCEPILFE — Core PCE Price Index
+- CPILFESL — Core CPI
+- PCEPI — PCE Price Index
 
 ### US Treasury Yields (ustreasuries.json)
 - DGS1MO — US 1-Month Bond Yield
@@ -60,13 +62,17 @@ The repo fetches 27 series from FRED, split into one JSON file per category. Eac
 ### Commodities (commodities.json)
 - DCOILBRENTEU — Brent Crude Oil
 - DCOILWTICO — WTI Crude Oil
+- GASREGW — US Gasoline Price
 - PCOPPUSDM — Copper Global Price
 - PALUMUSDM — Aluminum Global Price
+- PZINCUSDM — Zinc Global Price
+- PNICKUSDM — Nickel Global Price
 
 ### Equity Indexes (equities.json)
 - SP500 — S&P 500 Index
 - NASDAQ100 — NASDAQ 100 Index
 - DJIA — Dow Jones Ind. Avg.
+- NIKKEI225 — Nikkei 225
 
 
 ## Data source
