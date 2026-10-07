@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "category": "Monetary Policy",
+    "generated_utc": "2026-10-07T20:59:15Z",
+    "source": "https://fred.stlouisfed.org/",
+    "series_count": 3
+  },
+  "series": {
+    "DFEDTARU": {
+      "name": "Fed Funds Upper Target",
+      "prefix": "",
+      "suffix": "%",
+      "yoy_type": "ch1",
+      "latest": {
+        "date": "2026-10-07",
+        "value": "4"
+      },
+      "yoy": {
+        "date": "2025-10-07",
+        "value": "-0.250000"
+      }
+    },
+    "FEDFUNDS": {
+      "name": "Fed Funds Effective Rate",
+      "prefix": "",
+      "suffix": "%",
+      "yoy_type": "ch1",
+      "latest": {
+        "date": "2026-09-01",
+        "value": "3.75"
+      },
+      "yoy": {
+        "date": "2025-09-01",
+        "value": "-0.470000"
+      }
+    },
+    "DFEDTARL": {
+      "name": "Fed Funds Lower Target",
+      "prefix": "",
+      "suffix": "%",
+      "yoy_type": "ch1",
+      "latest": {
+        "date": "2026-10-07",
+        "value": "3.75"
+      },
+      "yoy": {
+        "date": "2025-10-07",
+        "value": "-0.250000"
+      }
+    }
+  }
+}

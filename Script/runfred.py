@@ -9,51 +9,85 @@ import requests
 # --- PATH RESOLUTION ---
 script_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.abspath(os.path.join(script_dir, ".."))
-DATA_FILE = os.path.join(project_root, "Data", "series.json")
+DATA_DIR = os.path.join(project_root, "Data")
 if script_dir not in sys.path:
     sys.path.insert(0, script_dir)
 
-# Master Source of Truth containing configurations for all registered macro dashboard cards
+# Master source of truth. Each category group writes its own JSON file in the Data folder.
+# The group key is the file name without the extension. For example "inflation" writes inflation.json.
 FRED_SERIES_CONFIG = {
-    # 1. Monetary Policy
-    "DFEDTARU": {"name": "Fed Funds Upper Target", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-    "FEDFUNDS": {"name": "Fed Funds Effective Rate", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-    "DFEDTARL": {"name": "Fed Funds Lower Target", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-    
-    # 2. Inflation Indexes
-    "CPIAUCSL": {"name": "Consumer Price Index", "yoy_type": "pc1", "prefix": "", "suffix": ""},
-    "PPIFIS": {"name": "Producer Price Index", "yoy_type": "pc1", "prefix": "", "suffix": ""},
-    "PCEPILFE": {"name": "Core PCE Price Index", "yoy_type": "pc1", "prefix": "", "suffix": ""},
-    
-    # 3. US Treasury Yields
-    "DGS1MO": {"name": "US 1-Month Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-    "DGS3MO": {"name": "US 3-Month Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-    "DGS6MO": {"name": "US 6-Month Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-    "DGS1": {"name": "US 1-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-    "DGS2": {"name": "US 2-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-    "DGS3": {"name": "US 3-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-    "DGS5": {"name": "US 5-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-    "DGS7": {"name": "US 7-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-    "DGS10": {"name": "US 10-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-    "DGS20": {"name": "US 20-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-    "DGS30": {"name": "US 30-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-    
-    # 4. Sentiment
-    "VIXCLS": {"name": "CBOE Volatility Index (VIX)", "yoy_type": "pc1", "prefix": "", "suffix": ""},
-    "STLFSI4": {"name": "Fed Financial Stress Index", "yoy_type": "ch1", "prefix": "", "suffix": ""},
-    "UMCSENT": {"name": "Consumer Sentiment Index", "yoy_type": "pc1", "prefix": "", "suffix": ""},
-    
-    # 5. Commodities
-    "DCOILBRENTEU": {"name": "Brent Crude Oil", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
-    "DCOILWTICO": {"name": "WTI Crude Oil", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
-    "PCOPPUSDM": {"name": "Copper Global Price", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
-    "PALUMUSDM": {"name": "Aluminum Global Price", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
-    
-    # 6. Equity Indexes
-    "SP500": {"name": "S&P 500 Index", "yoy_type": "pc1", "prefix": "", "suffix": ""},
-    "NASDAQ100": {"name": "NASDAQ 100 Index", "yoy_type": "pc1", "prefix": "", "suffix": ""},
-    "DJIA": {"name": "Dow Jones Ind. Avg.", "yoy_type": "pc1", "prefix": "", "suffix": ""},
+    "monetary": {
+        "name": "Monetary Policy",
+        "series": {
+            "DFEDTARU": {"name": "Fed Funds Upper Target", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
+            "FEDFUNDS": {"name": "Fed Funds Effective Rate", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
+            "DFEDTARL": {"name": "Fed Funds Lower Target", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
+        },
+    },
+    "inflation": {
+        "name": "Inflation",
+        "series": {
+            "CPIAUCSL": {"name": "Consumer Price Index", "yoy_type": "pc1", "prefix": "", "suffix": ""},
+            "PPIFIS": {"name": "Producer Price Index", "yoy_type": "pc1", "prefix": "", "suffix": ""},
+            "PCEPILFE": {"name": "Core PCE Price Index", "yoy_type": "pc1", "prefix": "", "suffix": ""},
+        },
+    },
+    "ustreasuries": {
+        "name": "US Treasury Yields",
+        "series": {
+            "DGS1MO": {"name": "US 1-Month Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
+            "DGS3MO": {"name": "US 3-Month Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
+            "DGS6MO": {"name": "US 6-Month Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
+            "DGS1": {"name": "US 1-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
+            "DGS2": {"name": "US 2-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
+            "DGS3": {"name": "US 3-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
+            "DGS5": {"name": "US 5-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
+            "DGS7": {"name": "US 7-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
+            "DGS10": {"name": "US 10-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
+            "DGS20": {"name": "US 20-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
+            "DGS30": {"name": "US 30-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
+        },
+    },
+    "sentiment": {
+        "name": "Sentiment",
+        "series": {
+            "VIXCLS": {"name": "CBOE Volatility Index (VIX)", "yoy_type": "pc1", "prefix": "", "suffix": ""},
+            "STLFSI4": {"name": "Fed Financial Stress Index", "yoy_type": "ch1", "prefix": "", "suffix": ""},
+            "UMCSENT": {"name": "Consumer Sentiment Index", "yoy_type": "pc1", "prefix": "", "suffix": ""},
+        },
+    },
+    "commodities": {
+        "name": "Commodities",
+        "series": {
+            "DCOILBRENTEU": {"name": "Brent Crude Oil", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
+            "DCOILWTICO": {"name": "WTI Crude Oil", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
+            "PCOPPUSDM": {"name": "Copper Global Price", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
+            "PALUMUSDM": {"name": "Aluminum Global Price", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
+        },
+    },
+    "equities": {
+        "name": "Equity Indexes",
+        "series": {
+            "SP500": {"name": "S&P 500 Index", "yoy_type": "pc1", "prefix": "", "suffix": ""},
+            "NASDAQ100": {"name": "NASDAQ 100 Index", "yoy_type": "pc1", "prefix": "", "suffix": ""},
+            "DJIA": {"name": "Dow Jones Ind. Avg.", "yoy_type": "pc1", "prefix": "", "suffix": ""},
+        },
+    },
 }
+
+
+def iter_series(config=None):
+    """Yields (series_id, config) pairs across every category group."""
+    groups = config or FRED_SERIES_CONFIG
+    for group in groups.values():
+        yield from group["series"].items()
+
+
+def total_series(config=None):
+    """Counts the configured series across every category group."""
+    groups = config or FRED_SERIES_CONFIG
+    return sum(len(group["series"]) for group in groups.values())
+
 
 class FredEconFetch:
     """
@@ -146,24 +180,24 @@ class FredEconFetch:
             observations = data.get("observations", [])
             if not observations:
                 return None
-            
+
             # Strip DOT placeholders and empty values
             valid_obs = [o for o in observations if o.get("value", "") not in ("", ".")]
-            
+
             if not valid_obs:
                 return None
-            
+
             latest = valid_obs[0]
             latest_val_str = latest["value"]
             latest_date_str = latest["date"]
-            
+
             try:
                 latest_val = float(latest_val_str)
             except ValueError:
                 return None
-            
+
             latest_dt = datetime.strptime(latest_date_str, "%Y-%m-%d").replace(tzinfo=timezone.utc)
-            
+
             # Scan for the observation closest to 1 year ago (handles monthly/daily series)
             prev_obs = None
             min_diff = float('inf')
@@ -173,7 +207,7 @@ class FredEconFetch:
                 if diff < min_diff:
                     min_diff = diff
                     prev_obs = obs
-            
+
             yoy_result = None
             if prev_obs:
                 try:
@@ -183,14 +217,14 @@ class FredEconFetch:
                             val = ((latest_val - prev_val) / prev_val) * 100.0
                         else: # "ch1"
                             val = latest_val - prev_val
-                        
+
                         yoy_result = {
                             "date": prev_obs["date"],
                             "value": f"{val:.6f}"
                         }
                 except Exception:  # noqa: BLE001, S110
                     pass
-            
+
             return {
                 "latest": {"date": latest_date_str, "value": latest_val_str},
                 "yoy": yoy_result
@@ -206,45 +240,61 @@ class FredEconFetch:
         """
         config = series_config or FRED_SERIES_CONFIG
         results = {}
-        
-        for sid, cfg in config.items():
+
+        for sid, cfg in iter_series(config):
             # Sleep 0.5 seconds between sequential requests to prevent FRED rate limiting
             time.sleep(0.5)
             yoy_type = cfg.get("yoy_type", "pc1")
             res = self.get_observation_with_yoy(sid, yoy_type)
             if res:
                 results[sid] = res
-                    
+
         return results
 
-def build_output(results):
-    """Builds the JSON payload that the data file stores."""
+
+def build_group_output(category_name, group, results):
+    """Builds the JSON payload for one category group."""
+    series = {}
+    for sid, cfg in group["series"].items():
+        res = results.get(sid)
+        if not res:
+            continue
+        series[sid] = {
+            "name": cfg["name"],
+            "prefix": cfg["prefix"],
+            "suffix": cfg["suffix"],
+            "yoy_type": cfg["yoy_type"],
+            "latest": res.get("latest"),
+            "yoy": res.get("yoy"),
+        }
     return {
         "meta": {
+            "category": category_name,
             "generated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
             "source": "https://fred.stlouisfed.org/",
-            "series_count": len(results),
+            "series_count": len(series),
         },
-        "series": {
-            sid: {
-                "name": FRED_SERIES_CONFIG[sid]["name"],
-                "prefix": FRED_SERIES_CONFIG[sid]["prefix"],
-                "suffix": FRED_SERIES_CONFIG[sid]["suffix"],
-                "yoy_type": FRED_SERIES_CONFIG[sid]["yoy_type"],
-                "latest": res.get("latest"),
-                "yoy": res.get("yoy"),
-            }
-            for sid, res in results.items()
-        },
+        "series": series,
     }
 
 
-def write_json(payload, path=DATA_FILE):
-    """Writes the payload to the data file as pretty JSON."""
+def write_json(payload, path):
+    """Writes the payload to a file as pretty JSON."""
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as handle:
         json.dump(payload, handle, indent=2, ensure_ascii=False)
         handle.write("\n")
+
+
+def write_group_files(results, config=None):
+    """Writes one JSON file per category group. Returns the written paths."""
+    groups = config or FRED_SERIES_CONFIG
+    written = []
+    for group_key, group in groups.items():
+        path = os.path.join(DATA_DIR, f"{group_key}.json")
+        write_json(build_group_output(group["name"], group, results), path)
+        written.append(path)
+    return written
 
 
 if __name__ == "__main__":
@@ -258,7 +308,8 @@ if __name__ == "__main__":
         print("[!] Critical: FRED API key missing. Set FRED_API_KEY or add Script/fred_key.py.")
         sys.exit(1)
 
-    print(f"[*] Series configured : {len(FRED_SERIES_CONFIG)}")
+    total = total_series()
+    print(f"[*] Series configured : {total}")
     print("[*] Fetching data (sequential, ~0.5s delay each)...")
 
     start_time = time.time()
@@ -266,14 +317,15 @@ if __name__ == "__main__":
     duration = time.time() - start_time
 
     print(f"[*] Duration          : {duration:.2f} seconds")
-    print(f"[*] Series fetched     : {len(results)}/{len(FRED_SERIES_CONFIG)}")
+    print(f"[*] Series fetched     : {len(results)}/{total}")
 
-    write_json(build_output(results))
+    write_group_files(results)
 
-    for sid, conf in FRED_SERIES_CONFIG.items():
-        status = "OK" if results.get(sid) else "MISSING"
-        print(f"  [{status}] {conf['name']} ({sid})")
+    for group_key, group in FRED_SERIES_CONFIG.items():
+        ok = sum(1 for sid in group["series"] if sid in results)
+        missing = len(group["series"]) - ok
+        flag = "" if missing == 0 else f"  ({missing} missing)"
+        print(f"  [{ok}/{len(group['series'])}] {group['name']} -> {group_key}.json{flag}")
 
-    print(f"[*] Data written to    : {DATA_FILE}")
+    print(f"[*] Files written to   : {DATA_DIR}")
     print("======================================================================")
-

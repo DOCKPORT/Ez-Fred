@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "category": "Inflation",
+    "generated_utc": "2026-10-07T20:59:15Z",
+    "source": "https://fred.stlouisfed.org/",
+    "series_count": 3
+  },
+  "series": {
+    "CPIAUCSL": {
+      "name": "Consumer Price Index",
+      "prefix": "",
+      "suffix": "",
+      "yoy_type": "pc1",
+      "latest": {
+        "date": "2026-08-01",
+        "value": "334.131"
+      },
+      "yoy": {
+        "date": "2025-08-01",
+        "value": "3.353016"
+      }
+    },
+    "PPIFIS": {
+      "name": "Producer Price Index",
+      "prefix": "",
+      "suffix": "",
+      "yoy_type": "pc1",
+      "latest": {
+        "date": "2026-08-01",
+        "value": "157.411"
+      },
+      "yoy": {
+        "date": "2025-08-01",
+        "value": "5.413622"
+      }
+    },
+    "PCEPILFE": {
+      "name": "Core PCE Price Index",
+      "prefix": "",
+      "suffix": "",
+      "yoy_type": "pc1",
+      "latest": {
+        "date": "2026-08-01",
+        "value": "130.455"
+      },
+      "yoy": {
+        "date": "2025-08-01",
+        "value": "3.007596"
+      }
+    }
+  }
+}

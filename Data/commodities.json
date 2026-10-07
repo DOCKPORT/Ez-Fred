@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "category": "Commodities",
+    "generated_utc": "2026-10-07T20:59:15Z",
+    "source": "https://fred.stlouisfed.org/",
+    "series_count": 4
+  },
+  "series": {
+    "DCOILBRENTEU": {
+      "name": "Brent Crude Oil",
+      "prefix": "$",
+      "suffix": "",
+      "yoy_type": "pc1",
+      "latest": {
+        "date": "2026-10-06",
+        "value": "125.44"
+      },
+      "yoy": {
+        "date": "2025-10-06",
+        "value": "86.972723"
+      }
+    },
+    "DCOILWTICO": {
+      "name": "WTI Crude Oil",
+      "prefix": "$",
+      "suffix": "",
+      "yoy_type": "pc1",
+      "latest": {
+        "date": "2026-10-06",
+        "value": "96.24"
+      },
+      "yoy": {
+        "date": "2025-10-06",
+        "value": "54.008641"
+      }
+    },
+    "PCOPPUSDM": {
+      "name": "Copper Global Price",
+      "prefix": "$",
+      "suffix": "",
+      "yoy_type": "pc1",
+      "latest": {
+        "date": "2026-07-01",
+        "value": "13542.82086956522"
+      },
+      "yoy": {
+        "date": "2025-07-01",
+        "value": "38.608151"
+      }
+    },
+    "PALUMUSDM": {
+      "name": "Aluminum Global Price",
+      "prefix": "$",
+      "suffix": "",
+      "yoy_type": "pc1",
+      "latest": {
+        "date": "2026-07-01",
+        "value": "3158.265"
+      },
+      "yoy": {
+        "date": "2025-07-01",
+        "value": "21.174812"
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "category": "Sentiment",
+    "generated_utc": "2026-10-07T20:59:15Z",
+    "source": "https://fred.stlouisfed.org/",
+    "series_count": 3
+  },
+  "series": {
+    "VIXCLS": {
+      "name": "CBOE Volatility Index (VIX)",
+      "prefix": "",
+      "suffix": "",
+      "yoy_type": "pc1",
+      "latest": {
+        "date": "2026-10-06",
+        "value": "15.01"
+      },
+      "yoy": {
+        "date": "2025-10-06",
+        "value": "-8.307880"
+      }
+    },
+    "STLFSI4": {
+      "name": "Fed Financial Stress Index",
+      "prefix": "",
+      "suffix": "",
+      "yoy_type": "ch1",
+      "latest": {
+        "date": "2026-10-02",
+        "value": "-0.4681"
+      },
+      "yoy": {
+        "date": "2025-10-03",
+        "value": "0.020600"
+      }
+    },
+    "UMCSENT": {
+      "name": "Consumer Sentiment Index",
+      "prefix": "",
+      "suffix": "",
+      "yoy_type": "pc1",
+      "latest": {
+        "date": "2026-08-01",
+        "value": "51.7"
+      },
+      "yoy": {
+        "date": "2025-08-01",
+        "value": "-11.168385"
+      }
+    }
+  }
+}
