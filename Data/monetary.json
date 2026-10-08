@@ -1,7 +1,7 @@
 {
   "meta": {
     "category": "Monetary Policy",
-    "generated_utc": "2026-10-07T21:48:10Z",
+    "generated_utc": "2026-10-08T23:02:09Z",
     "source": "https://fred.stlouisfed.org/",
     "series_count": 3
   },
@@ -12,11 +12,11 @@
       "suffix": "%",
       "yoy_type": "ch1",
       "latest": {
-        "date": "2026-10-07",
+        "date": "2026-10-08",
         "value": "4"
       },
       "yoy": {
-        "date": "2025-10-07",
+        "date": "2025-10-08",
         "value": "-0.250000"
       }
     },
@@ -26,11 +26,11 @@
       "suffix": "%",
       "yoy_type": "ch1",
       "latest": {
-        "date": "2026-10-06",
+        "date": "2026-10-07",
         "value": "3.88"
       },
       "yoy": {
-        "date": "2025-10-06",
+        "date": "2025-10-07",
         "value": "-0.210000"
       }
     },
@@ -40,11 +40,11 @@
       "suffix": "%",
       "yoy_type": "ch1",
       "latest": {
-        "date": "2026-10-07",
+        "date": "2026-10-08",
         "value": "3.75"
       },
       "yoy": {
-        "date": "2025-10-07",
+        "date": "2025-10-08",
         "value": "-0.250000"
       }
     }

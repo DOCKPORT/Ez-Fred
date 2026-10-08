@@ -58,6 +58,18 @@ FRED_SERIES_CONFIG = {
             "UMCSENT": {"name": "Consumer Sentiment Index", "yoy_type": "pc1", "prefix": "", "suffix": ""},
         },
     },
+    "labor": {
+        "name": "Labor Market",
+        "series": {
+            "UNRATE": {"name": "Unemployment Rate", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
+            "PAYEMS": {"name": "Nonfarm Payrolls", "yoy_type": "pc1", "prefix": "", "suffix": ""},
+            "ICSA": {"name": "Initial Jobless Claims", "yoy_type": "pc1", "prefix": "", "suffix": ""},
+            "CCSA": {"name": "Continuing Jobless Claims", "yoy_type": "pc1", "prefix": "", "suffix": ""},
+            "JTSJOL": {"name": "Job Openings (JOLTS)", "yoy_type": "pc1", "prefix": "", "suffix": ""},
+            "CIVPART": {"name": "Labor Force Participation Rate", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
+            "U6RATE": {"name": "U-6 Unemployment Rate", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
+        },
+    },
     "commodities": {
         "name": "Commodities",
         "series": {

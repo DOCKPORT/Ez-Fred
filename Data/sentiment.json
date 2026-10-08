@@ -1,7 +1,7 @@
 {
   "meta": {
     "category": "Sentiment",
-    "generated_utc": "2026-10-07T21:48:10Z",
+    "generated_utc": "2026-10-08T23:02:09Z",
     "source": "https://fred.stlouisfed.org/",
     "series_count": 3
   },
@@ -12,12 +12,12 @@
       "suffix": "",
       "yoy_type": "pc1",
       "latest": {
-        "date": "2026-10-06",
-        "value": "15.01"
+        "date": "2026-10-07",
+        "value": "15.08"
       },
       "yoy": {
-        "date": "2025-10-06",
-        "value": "-8.307880"
+        "date": "2025-10-07",
+        "value": "-12.529002"
       }
     },
     "STLFSI4": {

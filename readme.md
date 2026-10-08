@@ -24,10 +24,11 @@ One JSON file per category, served via raw.githubusercontent.com:
 - https://raw.githubusercontent.com/DOCKPORT/Ez-Fred/main/Data/sentiment.json
 - https://raw.githubusercontent.com/DOCKPORT/Ez-Fred/main/Data/commodities.json
 - https://raw.githubusercontent.com/DOCKPORT/Ez-Fred/main/Data/equities.json
+- https://raw.githubusercontent.com/DOCKPORT/Ez-Fred/main/Data/labor.json
 
 ## Data Series
 
-The repo fetches 33 series from FRED, split into one JSON file per category. Each entry stores the latest value and the value from one year ago.
+The repo fetches 40 series from FRED, split into one JSON file per category. Each entry stores the latest value and the value from one year ago.
 
 ### Monetary Policy (monetary.json)
 - DFEDTARU — Fed Funds Upper Target
@@ -58,6 +59,15 @@ The repo fetches 33 series from FRED, split into one JSON file per category. Eac
 - VIXCLS — CBOE Volatility Index (VIX)
 - STLFSI4 — Fed Financial Stress Index
 - UMCSENT — Consumer Sentiment Index
+
+### Labor Market (labor.json)
+- UNRATE — Unemployment Rate
+- PAYEMS — Nonfarm Payrolls
+- ICSA — Initial Jobless Claims
+- CCSA — Continuing Jobless Claims
+- JTSJOL — Job Openings (JOLTS)
+- CIVPART — Labor Force Participation Rate
+- U6RATE — U-6 Unemployment Rate
 
 ### Commodities (commodities.json)
 - DCOILBRENTEU — Brent Crude Oil
