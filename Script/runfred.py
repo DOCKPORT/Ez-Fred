@@ -85,10 +85,10 @@ FRED_SERIES_CONFIG = {
     "equities": {
         "name": "Equity Indexes",
         "series": {
-            "SP500": {"name": "S&P 500 Index", "yoy_type": "pc1", "prefix": "", "suffix": ""},
-            "NASDAQ100": {"name": "NASDAQ 100 Index", "yoy_type": "pc1", "prefix": "", "suffix": ""},
-            "DJIA": {"name": "Dow Jones Ind. Avg.", "yoy_type": "pc1", "prefix": "", "suffix": ""},
-            "NIKKEI225": {"name": "Nikkei 225", "yoy_type": "pc1", "prefix": "", "suffix": ""},
+            "SP500": {"name": "S&P 500 Index", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
+            "NASDAQ100": {"name": "NASDAQ 100 Index", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
+            "DJIA": {"name": "Dow Jones Ind. Avg.", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
+            "NIKKEI225": {"name": "Nikkei 225", "yoy_type": "pc1", "prefix": "JPY", "suffix": ""},
         },
     },
 }
@@ -105,6 +105,13 @@ def total_series(config=None):
     """Counts the configured series across every category group."""
     groups = config or FRED_SERIES_CONFIG
     return sum(len(group["series"]) for group in groups.values())
+
+
+# Maps FRED unit codes to plain words for the JSON output.
+CHANGE_TYPES = {
+    "pc1": "percent",
+    "ch1": "absolute",
+}
 
 
 class FredEconFetch:
@@ -226,26 +233,32 @@ class FredEconFetch:
                     min_diff = diff
                     prev_obs = obs
 
-            yoy_result = None
+            year_ago_result = None
+            change_result = None
             if prev_obs:
                 try:
                     prev_val = float(prev_obs["value"])
+                    year_ago_result = {
+                        "date": prev_obs["date"],
+                        "value": prev_val
+                    }
                     if prev_val != 0:
                         if yoy_type == "pc1":
                             val = ((latest_val - prev_val) / prev_val) * 100.0
                         else: # "ch1"
                             val = latest_val - prev_val
 
-                        yoy_result = {
-                            "date": prev_obs["date"],
-                            "value": f"{val:.6f}"
+                        change_result = {
+                            "type": CHANGE_TYPES.get(yoy_type, "absolute"),
+                            "value": round(val, 4)
                         }
                 except Exception:  # noqa: BLE001, S110
                     pass
 
             return {
-                "latest": {"date": latest_date_str, "value": latest_val_str},
-                "yoy": yoy_result
+                "latest": {"date": latest_date_str, "value": latest_val},
+                "YoY": year_ago_result,
+                "change": change_result
             }
         except Exception as e:  # noqa: BLE001
             print(f"[!] Single-call YoY fetch error for {series_id}: {e}")
@@ -279,17 +292,15 @@ def build_group_output(category_name, group, results):
             continue
         series[sid] = {
             "name": cfg["name"],
-            "prefix": cfg["prefix"],
-            "suffix": cfg["suffix"],
-            "yoy_type": cfg["yoy_type"],
+            "display": {"prefix": cfg["prefix"], "suffix": cfg["suffix"]},
             "latest": res.get("latest"),
-            "yoy": res.get("yoy"),
+            "YoY": res.get("YoY"),
+            "change": res.get("change"),
         }
     return {
         "meta": {
             "category": category_name,
             "generated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-            "source": "https://fred.stlouisfed.org/",
             "series_count": len(series),
         },
         "series": series,

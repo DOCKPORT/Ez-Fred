@@ -1,107 +1,141 @@
 {
   "meta": {
     "category": "Labor Market",
-    "generated_utc": "2026-10-08T23:02:09Z",
-    "source": "https://fred.stlouisfed.org/",
+    "generated_utc": "2026-10-08T23:46:33Z",
     "series_count": 7
   },
   "series": {
     "UNRATE": {
       "name": "Unemployment Rate",
-      "prefix": "",
-      "suffix": "%",
-      "yoy_type": "ch1",
+      "display": {
+        "prefix": "",
+        "suffix": "%"
+      },
       "latest": {
         "date": "2026-09-01",
-        "value": "4.2"
+        "value": 4.2
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-09-01",
-        "value": "-0.200000"
+        "value": 4.4
+      },
+      "change": {
+        "type": "absolute",
+        "value": -0.2
       }
     },
     "PAYEMS": {
       "name": "Nonfarm Payrolls",
-      "prefix": "",
-      "suffix": "",
-      "yoy_type": "pc1",
+      "display": {
+        "prefix": "",
+        "suffix": ""
+      },
       "latest": {
         "date": "2026-09-01",
-        "value": "159044"
+        "value": 159044.0
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-09-01",
-        "value": "0.312839"
+        "value": 158548.0
+      },
+      "change": {
+        "type": "percent",
+        "value": 0.3128
       }
     },
     "ICSA": {
       "name": "Initial Jobless Claims",
-      "prefix": "",
-      "suffix": "",
-      "yoy_type": "pc1",
+      "display": {
+        "prefix": "",
+        "suffix": ""
+      },
       "latest": {
         "date": "2026-10-03",
-        "value": "197000"
+        "value": 197000.0
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-10-04",
-        "value": "-15.450644"
+        "value": 233000.0
+      },
+      "change": {
+        "type": "percent",
+        "value": -15.4506
       }
     },
     "CCSA": {
       "name": "Continuing Jobless Claims",
-      "prefix": "",
-      "suffix": "",
-      "yoy_type": "pc1",
+      "display": {
+        "prefix": "",
+        "suffix": ""
+      },
       "latest": {
         "date": "2026-09-26",
-        "value": "1716000"
+        "value": 1716000.0
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-09-27",
-        "value": "-11.041991"
+        "value": 1929000.0
+      },
+      "change": {
+        "type": "percent",
+        "value": -11.042
       }
     },
     "JTSJOL": {
       "name": "Job Openings (JOLTS)",
-      "prefix": "",
-      "suffix": "",
-      "yoy_type": "pc1",
+      "display": {
+        "prefix": "",
+        "suffix": ""
+      },
       "latest": {
         "date": "2026-08-01",
-        "value": "7079"
+        "value": 7079.0
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-08-01",
-        "value": "2.312473"
+        "value": 6919.0
+      },
+      "change": {
+        "type": "percent",
+        "value": 2.3125
       }
     },
     "CIVPART": {
       "name": "Labor Force Participation Rate",
-      "prefix": "",
-      "suffix": "%",
-      "yoy_type": "ch1",
+      "display": {
+        "prefix": "",
+        "suffix": "%"
+      },
       "latest": {
         "date": "2026-09-01",
-        "value": "61.8"
+        "value": 61.8
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-09-01",
-        "value": "-0.700000"
+        "value": 62.5
+      },
+      "change": {
+        "type": "absolute",
+        "value": -0.7
       }
     },
     "U6RATE": {
       "name": "U-6 Unemployment Rate",
-      "prefix": "",
-      "suffix": "%",
-      "yoy_type": "ch1",
+      "display": {
+        "prefix": "",
+        "suffix": "%"
+      },
       "latest": {
         "date": "2026-09-01",
-        "value": "7.6"
+        "value": 7.6
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-09-01",
-        "value": "-0.500000"
+        "value": 8.1
+      },
+      "change": {
+        "type": "absolute",
+        "value": -0.5
       }
     }
   }

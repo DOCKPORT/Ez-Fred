@@ -1,51 +1,65 @@
 {
   "meta": {
     "category": "Monetary Policy",
-    "generated_utc": "2026-10-08T23:02:09Z",
-    "source": "https://fred.stlouisfed.org/",
+    "generated_utc": "2026-10-08T23:46:33Z",
     "series_count": 3
   },
   "series": {
     "DFEDTARU": {
       "name": "Fed Funds Upper Target",
-      "prefix": "",
-      "suffix": "%",
-      "yoy_type": "ch1",
+      "display": {
+        "prefix": "",
+        "suffix": "%"
+      },
       "latest": {
         "date": "2026-10-08",
-        "value": "4"
+        "value": 4.0
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-10-08",
-        "value": "-0.250000"
+        "value": 4.25
+      },
+      "change": {
+        "type": "absolute",
+        "value": -0.25
       }
     },
     "EFFR": {
       "name": "Effective Federal Funds Rate",
-      "prefix": "",
-      "suffix": "%",
-      "yoy_type": "ch1",
+      "display": {
+        "prefix": "",
+        "suffix": "%"
+      },
       "latest": {
         "date": "2026-10-07",
-        "value": "3.88"
+        "value": 3.88
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-10-07",
-        "value": "-0.210000"
+        "value": 4.09
+      },
+      "change": {
+        "type": "absolute",
+        "value": -0.21
       }
     },
     "DFEDTARL": {
       "name": "Fed Funds Lower Target",
-      "prefix": "",
-      "suffix": "%",
-      "yoy_type": "ch1",
+      "display": {
+        "prefix": "",
+        "suffix": "%"
+      },
       "latest": {
         "date": "2026-10-08",
-        "value": "3.75"
+        "value": 3.75
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-10-08",
-        "value": "-0.250000"
+        "value": 4.0
+      },
+      "change": {
+        "type": "absolute",
+        "value": -0.25
       }
     }
   }

@@ -1,51 +1,65 @@
 {
   "meta": {
     "category": "Sentiment",
-    "generated_utc": "2026-10-08T23:02:09Z",
-    "source": "https://fred.stlouisfed.org/",
+    "generated_utc": "2026-10-08T23:46:33Z",
     "series_count": 3
   },
   "series": {
     "VIXCLS": {
       "name": "CBOE Volatility Index (VIX)",
-      "prefix": "",
-      "suffix": "",
-      "yoy_type": "pc1",
+      "display": {
+        "prefix": "",
+        "suffix": ""
+      },
       "latest": {
         "date": "2026-10-07",
-        "value": "15.08"
+        "value": 15.08
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-10-07",
-        "value": "-12.529002"
+        "value": 17.24
+      },
+      "change": {
+        "type": "percent",
+        "value": -12.529
       }
     },
     "STLFSI4": {
       "name": "Fed Financial Stress Index",
-      "prefix": "",
-      "suffix": "",
-      "yoy_type": "ch1",
+      "display": {
+        "prefix": "",
+        "suffix": ""
+      },
       "latest": {
         "date": "2026-10-02",
-        "value": "-0.4681"
+        "value": -0.4681
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-10-03",
-        "value": "0.020600"
+        "value": -0.4887
+      },
+      "change": {
+        "type": "absolute",
+        "value": 0.0206
       }
     },
     "UMCSENT": {
       "name": "Consumer Sentiment Index",
-      "prefix": "",
-      "suffix": "",
-      "yoy_type": "pc1",
+      "display": {
+        "prefix": "",
+        "suffix": ""
+      },
       "latest": {
         "date": "2026-08-01",
-        "value": "51.7"
+        "value": 51.7
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-08-01",
-        "value": "-11.168385"
+        "value": 58.2
+      },
+      "change": {
+        "type": "percent",
+        "value": -11.1684
       }
     }
   }

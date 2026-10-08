@@ -1,79 +1,103 @@
 {
   "meta": {
     "category": "Inflation",
-    "generated_utc": "2026-10-08T23:02:09Z",
-    "source": "https://fred.stlouisfed.org/",
+    "generated_utc": "2026-10-08T23:46:33Z",
     "series_count": 5
   },
   "series": {
     "CPIAUCSL": {
       "name": "Consumer Price Index",
-      "prefix": "",
-      "suffix": "",
-      "yoy_type": "pc1",
+      "display": {
+        "prefix": "",
+        "suffix": ""
+      },
       "latest": {
         "date": "2026-08-01",
-        "value": "334.131"
+        "value": 334.131
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-08-01",
-        "value": "3.353016"
+        "value": 323.291
+      },
+      "change": {
+        "type": "percent",
+        "value": 3.353
       }
     },
     "PPIFIS": {
       "name": "Producer Price Index",
-      "prefix": "",
-      "suffix": "",
-      "yoy_type": "pc1",
+      "display": {
+        "prefix": "",
+        "suffix": ""
+      },
       "latest": {
         "date": "2026-08-01",
-        "value": "157.411"
+        "value": 157.411
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-08-01",
-        "value": "5.413622"
+        "value": 149.327
+      },
+      "change": {
+        "type": "percent",
+        "value": 5.4136
       }
     },
     "PCEPILFE": {
       "name": "Core PCE Price Index",
-      "prefix": "",
-      "suffix": "",
-      "yoy_type": "pc1",
+      "display": {
+        "prefix": "",
+        "suffix": ""
+      },
       "latest": {
         "date": "2026-08-01",
-        "value": "130.455"
+        "value": 130.455
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-08-01",
-        "value": "3.007596"
+        "value": 126.646
+      },
+      "change": {
+        "type": "percent",
+        "value": 3.0076
       }
     },
     "CPILFESL": {
       "name": "Core CPI",
-      "prefix": "",
-      "suffix": "",
-      "yoy_type": "pc1",
+      "display": {
+        "prefix": "",
+        "suffix": ""
+      },
       "latest": {
         "date": "2026-08-01",
-        "value": "337.765"
+        "value": 337.765
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-08-01",
-        "value": "2.446163"
+        "value": 329.7
+      },
+      "change": {
+        "type": "percent",
+        "value": 2.4462
       }
     },
     "PCEPI": {
       "name": "PCE Price Index",
-      "prefix": "",
-      "suffix": "",
-      "yoy_type": "pc1",
+      "display": {
+        "prefix": "",
+        "suffix": ""
+      },
       "latest": {
         "date": "2026-08-01",
-        "value": "131.579"
+        "value": 131.579
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-08-01",
-        "value": "3.419032"
+        "value": 127.229
+      },
+      "change": {
+        "type": "percent",
+        "value": 3.419
       }
     }
   }

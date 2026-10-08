@@ -1,163 +1,217 @@
 {
   "meta": {
     "category": "US Treasury Yields",
-    "generated_utc": "2026-10-08T23:02:09Z",
-    "source": "https://fred.stlouisfed.org/",
+    "generated_utc": "2026-10-08T23:46:33Z",
     "series_count": 11
   },
   "series": {
     "DGS1MO": {
       "name": "US 1-Month Bond Yield",
-      "prefix": "",
-      "suffix": "%",
-      "yoy_type": "ch1",
+      "display": {
+        "prefix": "",
+        "suffix": "%"
+      },
       "latest": {
         "date": "2026-10-07",
-        "value": "4.07"
+        "value": 4.07
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-10-07",
-        "value": "-0.130000"
+        "value": 4.2
+      },
+      "change": {
+        "type": "absolute",
+        "value": -0.13
       }
     },
     "DGS3MO": {
       "name": "US 3-Month Bond Yield",
-      "prefix": "",
-      "suffix": "%",
-      "yoy_type": "ch1",
+      "display": {
+        "prefix": "",
+        "suffix": "%"
+      },
       "latest": {
         "date": "2026-10-07",
-        "value": "4.22"
+        "value": 4.22
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-10-07",
-        "value": "0.210000"
+        "value": 4.01
+      },
+      "change": {
+        "type": "absolute",
+        "value": 0.21
       }
     },
     "DGS6MO": {
       "name": "US 6-Month Bond Yield",
-      "prefix": "",
-      "suffix": "%",
-      "yoy_type": "ch1",
+      "display": {
+        "prefix": "",
+        "suffix": "%"
+      },
       "latest": {
         "date": "2026-10-07",
-        "value": "4.28"
+        "value": 4.28
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-10-07",
-        "value": "0.470000"
+        "value": 3.81
+      },
+      "change": {
+        "type": "absolute",
+        "value": 0.47
       }
     },
     "DGS1": {
       "name": "US 1-Year Bond Yield",
-      "prefix": "",
-      "suffix": "%",
-      "yoy_type": "ch1",
+      "display": {
+        "prefix": "",
+        "suffix": "%"
+      },
       "latest": {
         "date": "2026-10-07",
-        "value": "4.42"
+        "value": 4.42
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-10-07",
-        "value": "0.770000"
+        "value": 3.65
+      },
+      "change": {
+        "type": "absolute",
+        "value": 0.77
       }
     },
     "DGS2": {
       "name": "US 2-Year Bond Yield",
-      "prefix": "",
-      "suffix": "%",
-      "yoy_type": "ch1",
+      "display": {
+        "prefix": "",
+        "suffix": "%"
+      },
       "latest": {
         "date": "2026-10-07",
-        "value": "4.77"
+        "value": 4.77
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-10-07",
-        "value": "1.200000"
+        "value": 3.57
+      },
+      "change": {
+        "type": "absolute",
+        "value": 1.2
       }
     },
     "DGS3": {
       "name": "US 3-Year Bond Yield",
-      "prefix": "",
-      "suffix": "%",
-      "yoy_type": "ch1",
+      "display": {
+        "prefix": "",
+        "suffix": "%"
+      },
       "latest": {
         "date": "2026-10-07",
-        "value": "4.87"
+        "value": 4.87
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-10-07",
-        "value": "1.310000"
+        "value": 3.56
+      },
+      "change": {
+        "type": "absolute",
+        "value": 1.31
       }
     },
     "DGS5": {
       "name": "US 5-Year Bond Yield",
-      "prefix": "",
-      "suffix": "%",
-      "yoy_type": "ch1",
+      "display": {
+        "prefix": "",
+        "suffix": "%"
+      },
       "latest": {
         "date": "2026-10-07",
-        "value": "5.03"
+        "value": 5.03
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-10-07",
-        "value": "1.320000"
+        "value": 3.71
+      },
+      "change": {
+        "type": "absolute",
+        "value": 1.32
       }
     },
     "DGS7": {
       "name": "US 7-Year Bond Yield",
-      "prefix": "",
-      "suffix": "%",
-      "yoy_type": "ch1",
+      "display": {
+        "prefix": "",
+        "suffix": "%"
+      },
       "latest": {
         "date": "2026-10-07",
-        "value": "5.15"
+        "value": 5.15
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-10-07",
-        "value": "1.250000"
+        "value": 3.9
+      },
+      "change": {
+        "type": "absolute",
+        "value": 1.25
       }
     },
     "DGS10": {
       "name": "US 10-Year Bond Yield",
-      "prefix": "",
-      "suffix": "%",
-      "yoy_type": "ch1",
+      "display": {
+        "prefix": "",
+        "suffix": "%"
+      },
       "latest": {
         "date": "2026-10-07",
-        "value": "5.28"
+        "value": 5.28
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-10-07",
-        "value": "1.140000"
+        "value": 4.14
+      },
+      "change": {
+        "type": "absolute",
+        "value": 1.14
       }
     },
     "DGS20": {
       "name": "US 20-Year Bond Yield",
-      "prefix": "",
-      "suffix": "%",
-      "yoy_type": "ch1",
+      "display": {
+        "prefix": "",
+        "suffix": "%"
+      },
       "latest": {
         "date": "2026-10-07",
-        "value": "5.71"
+        "value": 5.71
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-10-07",
-        "value": "1.010000"
+        "value": 4.7
+      },
+      "change": {
+        "type": "absolute",
+        "value": 1.01
       }
     },
     "DGS30": {
       "name": "US 30-Year Bond Yield",
-      "prefix": "",
-      "suffix": "%",
-      "yoy_type": "ch1",
+      "display": {
+        "prefix": "",
+        "suffix": "%"
+      },
       "latest": {
         "date": "2026-10-07",
-        "value": "5.67"
+        "value": 5.67
       },
-      "yoy": {
+      "YoY": {
         "date": "2025-10-07",
-        "value": "0.940000"
+        "value": 4.73
+      },
+      "change": {
+        "type": "absolute",
+        "value": 0.94
       }
     }
   }

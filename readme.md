@@ -26,6 +26,30 @@ One JSON file per category, served via raw.githubusercontent.com:
 - https://raw.githubusercontent.com/DOCKPORT/Ez-Fred/main/Data/equities.json
 - https://raw.githubusercontent.com/DOCKPORT/Ez-Fred/main/Data/labor.json
 
+## JSON format
+
+Each file has two top-level keys: `meta` and `series`.
+
+### meta
+- `category` — the category name.
+- `generated_utc` — the time of the fetch, in UTC.
+- `series_count` — how many series the file holds.
+
+### series
+Each key is a FRED series ID. Each value holds:
+- `name` — the series name.
+- `display` — `prefix` and `suffix`, the symbols to show around the number.
+- `latest` — `date` and `value`, the newest observation.
+- `YoY` — `date` and `value`, the same series about one year back.
+- `change` — `type` and `value`, the change from one year ago. It compares `latest.value` with `YoY.value`.
+  - `type` is `percent` for index and price series.
+  - `type` is `absolute` for rate series.
+- If no year-ago value exists, then `YoY` and `change` are null.
+
+### How to read a change
+- CPI `change` of `3.35` with `type` percent means the index rose 3.35 percent over one year.
+- DGS10 `change` of `1.18` with `type` absolute means the yield rose 1.18 percentage points over one year.
+
 ## Data Series
 
 The repo fetches 40 series from FRED, split into one JSON file per category. Each entry stores the latest value and the value from one year ago.
