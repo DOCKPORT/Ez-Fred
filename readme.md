@@ -2,7 +2,7 @@
   <img src="logo/FRED_Logo_Home_Page_a.svg" alt="ez-fred">
 </p>
 
-`REPO IS UNDER DERVELOPMENT NO RELEASES YET. FOR NOW YOU CAN OBSERVE THE ENDPOINT, BUT WAIT TILL YOU SEE A FULL RELEASE.`
+
 
 # Ez-Fred
 
