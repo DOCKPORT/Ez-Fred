@@ -123,13 +123,6 @@ class FredEconFetch:
     REQUEST_TIMEOUT = (5, 10)
     YOY_WINDOW_DAYS = 550
 
-    # Error code constants
-    ERROR_KEY_MISSING = "KEY_MISSING"
-    ERROR_KEY_INVALID = "KEY_INVALID"
-    ERROR_CONNECTION = "CONNECTION"
-    ERROR_RATE_LIMIT = "RATE_LIMIT"
-    ERROR_SERVER_ERROR = "SERVER_ERROR"
-
     def __init__(self):
         self.session = requests.Session()
         # Adapt User-Agent to prevent bot-filtering
@@ -138,7 +131,6 @@ class FredEconFetch:
             "Accept-Encoding": "gzip, deflate"
         })
         self.api_key = self._load_api_key()
-        self.last_error = None
 
     def _fetch(self, params, series_id):
         """Shared single GET request wrapper for FRED API endpoints."""
@@ -148,18 +140,12 @@ class FredEconFetch:
             return response.json()
         except requests.exceptions.HTTPError as http_err:
             status_code = http_err.response.status_code if http_err.response is not None else 0
-            if status_code == 429:
-                self.last_error = "FRED API Rate Limited (HTTP 429)"
-            else:
-                self.last_error = f"FRED Server Error (HTTP {status_code})"
             print(f"[!] Server error {status_code} for {series_id}: {http_err}")
             return None
         except (requests.exceptions.ConnectionError, requests.exceptions.Timeout) as conn_err:
-            self.last_error = "FRED Connection/Timeout Error"
             print(f"[!] Connection error for {series_id}: {conn_err}")
             return None
         except requests.exceptions.RequestException as e:
-            self.last_error = "FRED Request Exception"
             print(f"[!] Request error for {series_id}: {e}")
             return None
 
