@@ -1,7 +1,7 @@
 {
   "meta": {
     "category": "Equity Indexes",
-    "generated_utc": "2026-10-08T23:46:33Z",
+    "generated_utc": "2026-10-09T00:08:45Z",
     "series_count": 4
   },
   "series": {
@@ -12,16 +12,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-10-07",
-        "value": 7801.77
+        "date": "2026-10-08",
+        "value": 7765.36
       },
       "YoY": {
-        "date": "2025-10-07",
-        "value": 6714.59
+        "date": "2025-10-08",
+        "value": 6753.72
       },
       "change": {
         "type": "percent",
-        "value": 16.1913
+        "value": 14.979
       }
     },
     "NASDAQ100": {
