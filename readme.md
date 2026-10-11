@@ -10,9 +10,12 @@ Free, no-limit and keyless API for most common FRED (Federal Reserve Economic Da
 
 ## What this repo solves
 
-To use FRED API directly, you would have to create an account and request an API key. And you would have to deal with their strict limits. You would have to spend time scripting safe connections, and dealing with an API key.
+To use FRED API directly, you would have to create an account and request an API key. And you would have to deal with their strict limits. You would have to spend time scripting safe connections, and dealing with an API key. With this repo, it solves all that. It handles the scripting, safe connections, keys and organize endpoints. All you would have to do is call an endpoint. No key, no limits and super fast connections. 
 
-This repo fetches and stores all the data daily, and is easily accessible as a JSON via raw.githubusercontent.com
+## Auto-fetch
+
+This repo fetches and updates every weekday and is easily accessible in JSON format.
+
 
 ## Endpoints
 
