@@ -1,7 +1,7 @@
 {
   "meta": {
     "category": "Inflation",
-    "generated_utc": "2026-10-13T23:31:06Z",
+    "generated_utc": "2026-10-14T22:49:49Z",
     "series_count": 5
   },
   "series": {
@@ -12,16 +12,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-08-01",
-        "value": 334.131
+        "date": "2026-09-01",
+        "value": 336.298
       },
       "YoY": {
-        "date": "2025-08-01",
-        "value": 323.291
+        "date": "2025-09-01",
+        "value": 324.245
       },
       "change": {
         "type": "percent",
-        "value": 3.353
+        "value": 3.7173
       }
     },
     "PPIFIS": {
@@ -69,16 +69,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-08-01",
-        "value": 337.765
+        "date": "2026-09-01",
+        "value": 338.896
       },
       "YoY": {
-        "date": "2025-08-01",
-        "value": 329.7
+        "date": "2025-09-01",
+        "value": 330.418
       },
       "change": {
         "type": "percent",
-        "value": 2.4462
+        "value": 2.5658
       }
     },
     "PCEPI": {
