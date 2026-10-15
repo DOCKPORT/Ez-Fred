@@ -1,7 +1,7 @@
 {
   "meta": {
     "category": "Equity Indexes",
-    "generated_utc": "2026-10-14T22:49:49Z",
+    "generated_utc": "2026-10-15T22:46:44Z",
     "series_count": 4
   },
   "series": {
@@ -12,16 +12,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-10-13",
-        "value": 7805.45
+        "date": "2026-10-14",
+        "value": 7718.94
       },
       "YoY": {
-        "date": "2025-10-13",
-        "value": 6654.72
+        "date": "2025-10-14",
+        "value": 6644.31
       },
       "change": {
         "type": "percent",
-        "value": 17.2919
+        "value": 16.1737
       }
     },
     "NASDAQ100": {
@@ -31,16 +31,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-10-13",
-        "value": 30569.48
+        "date": "2026-10-14",
+        "value": 29950.82
       },
       "YoY": {
-        "date": "2025-10-13",
-        "value": 24750.25
+        "date": "2025-10-14",
+        "value": 24579.32
       },
       "change": {
         "type": "percent",
-        "value": 23.5118
+        "value": 21.8537
       }
     },
     "DJIA": {
@@ -50,16 +50,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-10-14",
-        "value": 51621.48
+        "date": "2026-10-15",
+        "value": 52177.69
       },
       "YoY": {
-        "date": "2025-10-14",
-        "value": 46270.46
+        "date": "2025-10-15",
+        "value": 46253.31
       },
       "change": {
         "type": "percent",
-        "value": 11.5647
+        "value": 12.8086
       }
     },
     "NIKKEI225": {
@@ -69,16 +69,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-10-14",
-        "value": 67744.29
+        "date": "2026-10-15",
+        "value": 64425.95
       },
       "YoY": {
-        "date": "2025-10-14",
-        "value": 46847.32
+        "date": "2025-10-15",
+        "value": 47672.67
       },
       "change": {
         "type": "percent",
-        "value": 44.6065
+        "value": 35.1423
       }
     }
   }

@@ -1,7 +1,7 @@
 {
   "meta": {
     "category": "Inflation",
-    "generated_utc": "2026-10-14T22:49:49Z",
+    "generated_utc": "2026-10-15T22:46:44Z",
     "series_count": 5
   },
   "series": {
@@ -31,16 +31,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-08-01",
-        "value": 157.411
+        "date": "2026-09-01",
+        "value": 159.78
       },
       "YoY": {
-        "date": "2025-08-01",
-        "value": 149.327
+        "date": "2025-09-01",
+        "value": 150.245
       },
       "change": {
         "type": "percent",
-        "value": 5.4136
+        "value": 6.3463
       }
     },
     "PCEPILFE": {
