@@ -1,8 +1,9 @@
 {
   "meta": {
     "category": "Labor Market",
-    "generated_utc": "2026-10-16T23:08:14Z",
-    "series_count": 7
+    "generated_utc": "2026-10-16T23:45:11Z",
+    "series_count": 7,
+    "stale_series": []
   },
   "series": {
     "UNRATE": {

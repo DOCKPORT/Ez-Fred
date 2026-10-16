@@ -13,85 +13,7 @@ DATA_DIR = os.path.join(project_root, "Data")
 if script_dir not in sys.path:
     sys.path.insert(0, script_dir)
 
-# Master source of truth. Each category group writes its own JSON file in the Data folder.
-# The group key is the file name without the extension. For example "inflation" writes inflation.json.
-FRED_SERIES_CONFIG = {
-    "monetary": {
-        "name": "Monetary Policy",
-        "series": {
-            "DFEDTARU": {"name": "Fed Funds Upper Target", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-            "EFFR": {"name": "Effective Federal Funds Rate", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-            "DFEDTARL": {"name": "Fed Funds Lower Target", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-        },
-    },
-    "inflation": {
-        "name": "Inflation",
-        "series": {
-            "CPIAUCSL": {"name": "Consumer Price Index", "yoy_type": "pc1", "prefix": "", "suffix": ""},
-            "PPIFIS": {"name": "Producer Price Index", "yoy_type": "pc1", "prefix": "", "suffix": ""},
-            "PCEPILFE": {"name": "Core PCE Price Index", "yoy_type": "pc1", "prefix": "", "suffix": ""},
-            "CPILFESL": {"name": "Core CPI", "yoy_type": "pc1", "prefix": "", "suffix": ""},
-            "PCEPI": {"name": "PCE Price Index", "yoy_type": "pc1", "prefix": "", "suffix": ""},
-        },
-    },
-    "ustreasuries": {
-        "name": "US Treasury Yields",
-        "series": {
-            "DGS1MO": {"name": "US 1-Month Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-            "DGS3MO": {"name": "US 3-Month Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-            "DGS6MO": {"name": "US 6-Month Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-            "DGS1": {"name": "US 1-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-            "DGS2": {"name": "US 2-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-            "DGS3": {"name": "US 3-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-            "DGS5": {"name": "US 5-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-            "DGS7": {"name": "US 7-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-            "DGS10": {"name": "US 10-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-            "DGS20": {"name": "US 20-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-            "DGS30": {"name": "US 30-Year Bond Yield", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-        },
-    },
-    "sentiment": {
-        "name": "Sentiment",
-        "series": {
-            "VIXCLS": {"name": "CBOE Volatility Index (VIX)", "yoy_type": "pc1", "prefix": "", "suffix": ""},
-            "STLFSI4": {"name": "Fed Financial Stress Index", "yoy_type": "ch1", "prefix": "", "suffix": ""},
-            "UMCSENT": {"name": "Consumer Sentiment Index", "yoy_type": "pc1", "prefix": "", "suffix": ""},
-        },
-    },
-    "labor": {
-        "name": "Labor Market",
-        "series": {
-            "UNRATE": {"name": "Unemployment Rate", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-            "PAYEMS": {"name": "Nonfarm Payrolls", "yoy_type": "pc1", "prefix": "", "suffix": ""},
-            "ICSA": {"name": "Initial Jobless Claims", "yoy_type": "pc1", "prefix": "", "suffix": ""},
-            "CCSA": {"name": "Continuing Jobless Claims", "yoy_type": "pc1", "prefix": "", "suffix": ""},
-            "JTSJOL": {"name": "Job Openings (JOLTS)", "yoy_type": "pc1", "prefix": "", "suffix": ""},
-            "CIVPART": {"name": "Labor Force Participation Rate", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-            "U6RATE": {"name": "U-6 Unemployment Rate", "yoy_type": "ch1", "prefix": "", "suffix": "%"},
-        },
-    },
-    "commodities": {
-        "name": "Commodities",
-        "series": {
-            "DCOILBRENTEU": {"name": "Brent Crude Oil", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
-            "DCOILWTICO": {"name": "WTI Crude Oil", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
-            "GASREGW": {"name": "US Gasoline Price", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
-            "PCOPPUSDM": {"name": "Copper Global Price", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
-            "PALUMUSDM": {"name": "Aluminum Global Price", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
-            "PZINCUSDM": {"name": "Zinc Global Price", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
-            "PNICKUSDM": {"name": "Nickel Global Price", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
-        },
-    },
-    "equities": {
-        "name": "Equity Indexes",
-        "series": {
-            "SP500": {"name": "S&P 500 Index", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
-            "NASDAQ100": {"name": "NASDAQ 100 Index", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
-            "DJIA": {"name": "Dow Jones Ind. Avg.", "yoy_type": "pc1", "prefix": "$", "suffix": ""},
-            "NIKKEI225": {"name": "Nikkei 225", "yoy_type": "pc1", "prefix": "JPY", "suffix": ""},
-        },
-    },
-}
+from config import FRED_SERIES_CONFIG  # noqa: E402
 
 
 def iter_series(config=None):
@@ -122,6 +44,9 @@ class FredEconFetch:
     FRED_BASE_URL = "https://api.stlouisfed.org/fred/series/observations"
     REQUEST_TIMEOUT = (5, 10)
     YOY_WINDOW_DAYS = 550
+    MAX_ATTEMPTS = 4
+    RETRY_BASE_DELAY = 2.0
+    RETRYABLE_STATUS = (429, 500, 502, 503, 504)
 
     def __init__(self):
         self.session = requests.Session()
@@ -133,21 +58,45 @@ class FredEconFetch:
         self.api_key = self._load_api_key()
 
     def _fetch(self, params, series_id):
-        """Shared single GET request wrapper for FRED API endpoints."""
-        try:
-            response = self.session.get(self.FRED_BASE_URL, params=params, timeout=self.REQUEST_TIMEOUT)
-            response.raise_for_status()
-            return response.json()
-        except requests.exceptions.HTTPError as http_err:
-            status_code = http_err.response.status_code if http_err.response is not None else 0
-            print(f"[!] Server error {status_code} for {series_id}: {http_err}")
-            return None
-        except (requests.exceptions.ConnectionError, requests.exceptions.Timeout) as conn_err:
-            print(f"[!] Connection error for {series_id}: {conn_err}")
-            return None
-        except requests.exceptions.RequestException as e:
-            print(f"[!] Request error for {series_id}: {e}")
-            return None
+        """
+        Shared GET request wrapper for FRED API endpoints.
+        Retries transient failures (connection errors, timeouts, HTTP 429 and 5xx).
+        A permanent failure (HTTP 4xx other than 429) returns None at once.
+        """
+        delay = self.RETRY_BASE_DELAY
+        last_error = ""
+
+        for attempt in range(1, self.MAX_ATTEMPTS + 1):
+            try:
+                response = self.session.get(self.FRED_BASE_URL, params=params, timeout=self.REQUEST_TIMEOUT)
+                if response.status_code in self.RETRYABLE_STATUS:
+                    raise requests.exceptions.HTTPError(
+                        f"retryable status {response.status_code}", response=response
+                    )
+                response.raise_for_status()
+                return response.json()
+            except requests.exceptions.HTTPError as http_err:
+                status_code = http_err.response.status_code if http_err.response is not None else 0
+                if status_code not in self.RETRYABLE_STATUS:
+                    print(f"[!] Server error {status_code} for {series_id}: {http_err}")
+                    return None
+                last_error = f"Server error {status_code}"
+            except (requests.exceptions.ConnectionError, requests.exceptions.Timeout) as conn_err:
+                last_error = f"Connection error: {conn_err}"
+            except ValueError as json_err:
+                # A malformed body can be transient. Retry it.
+                last_error = f"JSON decode error: {json_err}"
+            except requests.exceptions.RequestException as e:
+                print(f"[!] Request error for {series_id}: {e}")
+                return None
+
+            if attempt < self.MAX_ATTEMPTS:
+                print(f"[!] Attempt {attempt}/{self.MAX_ATTEMPTS} failed for {series_id} ({last_error}). Retry in {delay:.0f}s.")
+                time.sleep(delay)
+                delay *= 2
+
+        print(f"[!] All {self.MAX_ATTEMPTS} attempts failed for {series_id}: {last_error}")
+        return None
 
     def _load_api_key(self):
         """Loads the FRED API key from the environment or the local fred_key.py file."""
@@ -171,7 +120,7 @@ class FredEconFetch:
         if not self.api_key:
             return None
 
-        today = datetime.now(timezone.utc)
+        today = datetime.now(timezone.utc)  # noqa: UP017
         start_date = (today - timedelta(days=self.YOY_WINDOW_DAYS)).strftime("%Y-%m-%d")
 
         params = {
@@ -207,13 +156,13 @@ class FredEconFetch:
             except ValueError:
                 return None
 
-            latest_dt = datetime.strptime(latest_date_str, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+            latest_dt = datetime.strptime(latest_date_str, "%Y-%m-%d").replace(tzinfo=timezone.utc)  # noqa: UP017
 
             # Scan for the observation closest to 1 year ago (handles monthly/daily series)
             prev_obs = None
             min_diff = float('inf')
             for obs in valid_obs:
-                obs_dt = datetime.strptime(obs["date"], "%Y-%m-%d").replace(tzinfo=timezone.utc)
+                obs_dt = datetime.strptime(obs["date"], "%Y-%m-%d").replace(tzinfo=timezone.utc)  # noqa: UP017
                 diff = abs((latest_dt - obs_dt).days - 365)
                 if diff < min_diff:
                     min_diff = diff
@@ -269,25 +218,55 @@ class FredEconFetch:
         return results
 
 
-def build_group_output(category_name, group, results):
-    """Builds the JSON payload for one category group."""
+def load_existing_series(path):
+    """
+    Reads the previous JSON file and returns its series map.
+    Returns an empty map when the file is absent or unreadable.
+    """
+    try:
+        with open(path, "r", encoding="utf-8") as handle:
+            payload = json.load(handle)
+    except FileNotFoundError:
+        return {}
+    except (OSError, ValueError) as e:
+        print(f"[!] Cannot read previous data at {path}: {e}")
+        return {}
+    series = payload.get("series")
+    return series if isinstance(series, dict) else {}
+
+
+def build_group_output(category_name, group, results, previous=None):
+    """
+    Builds the JSON payload for one category group.
+    A series without fresh data keeps its previous entry. This rule prevents data loss.
+    """
+    previous = previous or {}
     series = {}
+    stale = []
+
     for sid, cfg in group["series"].items():
         res = results.get(sid)
-        if not res:
+        if res:
+            series[sid] = {
+                "name": cfg["name"],
+                "display": {"prefix": cfg["prefix"], "suffix": cfg["suffix"]},
+                "latest": res.get("latest"),
+                "YoY": res.get("YoY"),
+                "change": res.get("change"),
+            }
             continue
-        series[sid] = {
-            "name": cfg["name"],
-            "display": {"prefix": cfg["prefix"], "suffix": cfg["suffix"]},
-            "latest": res.get("latest"),
-            "YoY": res.get("YoY"),
-            "change": res.get("change"),
-        }
+        old_entry = previous.get(sid)
+        if old_entry:
+            # Carry the last good value forward. Never write an empty series.
+            series[sid] = old_entry
+            stale.append(sid)
+
     return {
         "meta": {
             "category": category_name,
-            "generated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "generated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # noqa: UP017
             "series_count": len(series),
+            "stale_series": stale,
         },
         "series": series,
     }
@@ -302,14 +281,20 @@ def write_json(payload, path):
 
 
 def write_group_files(results, config=None):
-    """Writes one JSON file per category group. Returns the written paths."""
+    """
+    Writes one JSON file per category group.
+    Returns a tuple: the written paths, and a map of group key to stale series IDs.
+    """
     groups = config or FRED_SERIES_CONFIG
     written = []
+    stale_map = {}
     for group_key, group in groups.items():
         path = os.path.join(DATA_DIR, f"{group_key}.json")
-        write_json(build_group_output(group["name"], group, results), path)
+        payload = build_group_output(group["name"], group, results, load_existing_series(path))
+        write_json(payload, path)
+        stale_map[group_key] = payload["meta"]["stale_series"]
         written.append(path)
-    return written
+    return written, stale_map
 
 
 if __name__ == "__main__":
@@ -334,13 +319,24 @@ if __name__ == "__main__":
     print(f"[*] Duration          : {duration:.2f} seconds")
     print(f"[*] Series fetched     : {len(results)}/{total}")
 
-    write_group_files(results)
+    written, stale_map = write_group_files(results)
 
     for group_key, group in FRED_SERIES_CONFIG.items():
-        ok = sum(1 for sid in group["series"] if sid in results)
-        missing = len(group["series"]) - ok
-        flag = "" if missing == 0 else f"  ({missing} missing)"
-        print(f"  [{ok}/{len(group['series'])}] {group['name']} -> {group_key}.json{flag}")
+        fresh = sum(1 for sid in group["series"] if sid in results)
+        stale = stale_map.get(group_key, [])
+        unavailable = len(group["series"]) - fresh - len(stale)
+        notes = []
+        if stale:
+            notes.append(f"{len(stale)} stale: {', '.join(stale)}")
+        if unavailable:
+            notes.append(f"{unavailable} unavailable")
+        flag = f"  ({'; '.join(notes)})" if notes else ""
+        print(f"  [{fresh}/{len(group['series'])}] {group['name']} -> {group_key}.json{flag}")
 
     print(f"[*] Files written to   : {DATA_DIR}")
     print("======================================================================")
+
+    if len(results) < total:
+        failed = total - len(results)
+        print(f"[!] {failed} series returned no data after retries. Previous values were kept.")
+        sys.exit(1)

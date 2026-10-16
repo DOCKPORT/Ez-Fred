@@ -37,6 +37,7 @@ Each file has two top-level keys: `meta` and `series`.
 - `category` — the category name.
 - `generated_utc` — the time of the fetch, in UTC.
 - `series_count` — how many series the file holds.
+- `stale_series` — the series IDs that kept an older value, because the fetch failed. Empty when every fetch succeeded.
 
 ### series
 Each key is a FRED series ID. Each value holds:
@@ -56,6 +57,8 @@ Each key is a FRED series ID. Each value holds:
 ## Data Series
 
 The repo fetches 40 series from FRED, split into one JSON file per category. Each entry stores the latest value and the value from one year ago.
+
+When a fetch fails, the script retries the request four times. If every attempt fails, the file keeps the previous value for that series. `meta.stale_series` lists the affected series IDs. The workflow then fails, but it still commits the data.
 
 ### Monetary Policy (monetary.json)
 - DFEDTARU — Fed Funds Upper Target

@@ -1,8 +1,9 @@
 {
   "meta": {
     "category": "US Treasury Yields",
-    "generated_utc": "2026-10-16T23:08:14Z",
-    "series_count": 11
+    "generated_utc": "2026-10-16T23:45:11Z",
+    "series_count": 11,
+    "stale_series": []
   },
   "series": {
     "DGS1MO": {

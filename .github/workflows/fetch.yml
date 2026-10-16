@@ -16,7 +16,7 @@ concurrency:
 jobs:
   fetch:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
 
     steps:
       - name: Check out the repository
@@ -36,6 +36,7 @@ jobs:
         run: python3 Script/runfred.py
 
       - name: Commit and push changed data
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
