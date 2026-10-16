@@ -1,7 +1,7 @@
 {
   "meta": {
     "category": "Monetary Policy",
-    "generated_utc": "2026-10-15T22:46:44Z",
+    "generated_utc": "2026-10-16T22:20:42Z",
     "series_count": 3
   },
   "series": {
@@ -12,11 +12,11 @@
         "suffix": "%"
       },
       "latest": {
-        "date": "2026-10-15",
+        "date": "2026-10-16",
         "value": 4.0
       },
       "YoY": {
-        "date": "2025-10-15",
+        "date": "2025-10-16",
         "value": 4.25
       },
       "change": {
@@ -31,11 +31,11 @@
         "suffix": "%"
       },
       "latest": {
-        "date": "2026-10-14",
+        "date": "2026-10-15",
         "value": 3.88
       },
       "YoY": {
-        "date": "2025-10-14",
+        "date": "2025-10-15",
         "value": 4.1
       },
       "change": {
@@ -50,11 +50,11 @@
         "suffix": "%"
       },
       "latest": {
-        "date": "2026-10-15",
+        "date": "2026-10-16",
         "value": 3.75
       },
       "YoY": {
-        "date": "2025-10-15",
+        "date": "2025-10-16",
         "value": 4.0
       },
       "change": {
