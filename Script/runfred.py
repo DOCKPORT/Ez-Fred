@@ -13,7 +13,7 @@ DATA_DIR = os.path.join(project_root, "Data")
 if script_dir not in sys.path:
     sys.path.insert(0, script_dir)
 
-from config import FRED_SERIES_CONFIG  # noqa: E402
+from config import FRED_SERIES_CONFIG
 
 
 def iter_series(config=None):
