@@ -3,6 +3,8 @@
 </p>
 
 
+![Fetch FRED data](https://github.com/DOCKPORT/Ez-Fred/actions/workflows/fetch.yml/badge.svg)
+
 
 # Ez-Fred
 
