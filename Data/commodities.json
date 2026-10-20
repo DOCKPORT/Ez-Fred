@@ -1,7 +1,7 @@
 {
   "meta": {
     "category": "Commodities",
-    "generated_utc": "2026-10-19T23:13:16Z",
+    "generated_utc": "2026-10-20T22:48:33Z",
     "series_count": 7,
     "stale_series": []
   },
@@ -51,16 +51,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-10-12",
-        "value": 4.331
+        "date": "2026-10-19",
+        "value": 4.284
       },
       "YoY": {
-        "date": "2025-10-13",
-        "value": 3.061
+        "date": "2025-10-20",
+        "value": 3.019
       },
       "change": {
         "type": "percent",
-        "value": 41.4897
+        "value": 41.9013
       }
     },
     "PCOPPUSDM": {
