@@ -1,9 +1,17 @@
 {
   "meta": {
     "category": "Labor Market",
-    "generated_utc": "2026-10-20T22:48:33Z",
+    "generated_utc": "2026-10-21T23:02:58Z",
     "series_count": 7,
-    "stale_series": []
+    "stale_series": [
+      "UNRATE",
+      "PAYEMS",
+      "ICSA",
+      "CCSA",
+      "JTSJOL",
+      "CIVPART",
+      "U6RATE"
+    ]
   },
   "series": {
     "UNRATE": {
