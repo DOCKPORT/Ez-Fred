@@ -1,14 +1,9 @@
 {
   "meta": {
     "category": "Equity Indexes",
-    "generated_utc": "2026-10-21T23:02:58Z",
+    "generated_utc": "2026-10-22T05:41:08Z",
     "series_count": 4,
-    "stale_series": [
-      "SP500",
-      "NASDAQ100",
-      "DJIA",
-      "NIKKEI225"
-    ]
+    "stale_series": []
   },
   "series": {
     "SP500": {
@@ -18,16 +13,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-10-19",
-        "value": 7690.73
+        "date": "2026-10-21",
+        "value": 7757.17
       },
       "YoY": {
-        "date": "2025-10-20",
-        "value": 6735.13
+        "date": "2025-10-21",
+        "value": 6735.35
       },
       "change": {
         "type": "percent",
-        "value": 14.1883
+        "value": 15.171
       }
     },
     "NASDAQ100": {
@@ -37,16 +32,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-10-19",
-        "value": 29529.34
+        "date": "2026-10-21",
+        "value": 29822.52
       },
       "YoY": {
-        "date": "2025-10-20",
-        "value": 25141.02
+        "date": "2025-10-21",
+        "value": 25127.13
       },
       "change": {
         "type": "percent",
-        "value": 17.4548
+        "value": 18.6865
       }
     },
     "DJIA": {
@@ -56,16 +51,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-10-20",
-        "value": 52495.88
+        "date": "2026-10-21",
+        "value": 52856.09
       },
       "YoY": {
-        "date": "2025-10-20",
-        "value": 46706.58
+        "date": "2025-10-21",
+        "value": 46924.74
       },
       "change": {
         "type": "percent",
-        "value": 12.395
+        "value": 12.6401
       }
     },
     "NIKKEI225": {
@@ -75,16 +70,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-10-20",
-        "value": 64075.42
+        "date": "2026-10-21",
+        "value": 64621.24
       },
       "YoY": {
-        "date": "2025-10-20",
-        "value": 49185.5
+        "date": "2025-10-21",
+        "value": 49316.06
       },
       "change": {
         "type": "percent",
-        "value": 30.273
+        "value": 31.0349
       }
     }
   }

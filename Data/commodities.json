@@ -1,17 +1,9 @@
 {
   "meta": {
     "category": "Commodities",
-    "generated_utc": "2026-10-21T23:02:58Z",
+    "generated_utc": "2026-10-22T05:41:08Z",
     "series_count": 7,
-    "stale_series": [
-      "DCOILBRENTEU",
-      "DCOILWTICO",
-      "GASREGW",
-      "PCOPPUSDM",
-      "PALUMUSDM",
-      "PZINCUSDM",
-      "PNICKUSDM"
-    ]
+    "stale_series": []
   },
   "series": {
     "DCOILBRENTEU": {
@@ -21,16 +13,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-10-14",
-        "value": 126.55
+        "date": "2026-10-20",
+        "value": 115.22
       },
       "YoY": {
-        "date": "2025-10-14",
-        "value": 63.0
+        "date": "2025-10-20",
+        "value": 60.71
       },
       "change": {
         "type": "percent",
-        "value": 100.873
+        "value": 89.7875
       }
     },
     "DCOILWTICO": {
@@ -40,16 +32,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-10-14",
-        "value": 101.91
+        "date": "2026-10-20",
+        "value": 107.89
       },
       "YoY": {
-        "date": "2025-10-14",
-        "value": 59.52
+        "date": "2025-10-20",
+        "value": 58.34
       },
       "change": {
         "type": "percent",
-        "value": 71.2198
+        "value": 84.9332
       }
     },
     "GASREGW": {

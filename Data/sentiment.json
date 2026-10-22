@@ -1,13 +1,9 @@
 {
   "meta": {
     "category": "Sentiment",
-    "generated_utc": "2026-10-21T23:02:58Z",
+    "generated_utc": "2026-10-22T05:41:08Z",
     "series_count": 3,
-    "stale_series": [
-      "VIXCLS",
-      "STLFSI4",
-      "UMCSENT"
-    ]
+    "stale_series": []
   },
   "series": {
     "VIXCLS": {
@@ -17,8 +13,8 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-10-19",
-        "value": 18.44
+        "date": "2026-10-20",
+        "value": 17.31
       },
       "YoY": {
         "date": "2025-10-20",
@@ -26,7 +22,7 @@
       },
       "change": {
         "type": "percent",
-        "value": 1.1519
+        "value": -5.0466
       }
     },
     "STLFSI4": {

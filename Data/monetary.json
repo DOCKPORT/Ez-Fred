@@ -1,13 +1,9 @@
 {
   "meta": {
     "category": "Monetary Policy",
-    "generated_utc": "2026-10-21T23:02:58Z",
+    "generated_utc": "2026-10-22T05:41:08Z",
     "series_count": 3,
-    "stale_series": [
-      "DFEDTARU",
-      "EFFR",
-      "DFEDTARL"
-    ]
+    "stale_series": []
   },
   "series": {
     "DFEDTARU": {
@@ -17,11 +13,11 @@
         "suffix": "%"
       },
       "latest": {
-        "date": "2026-10-20",
+        "date": "2026-10-21",
         "value": 4.0
       },
       "YoY": {
-        "date": "2025-10-20",
+        "date": "2025-10-21",
         "value": 4.25
       },
       "change": {
@@ -36,7 +32,7 @@
         "suffix": "%"
       },
       "latest": {
-        "date": "2026-10-19",
+        "date": "2026-10-20",
         "value": 3.88
       },
       "YoY": {
@@ -55,11 +51,11 @@
         "suffix": "%"
       },
       "latest": {
-        "date": "2026-10-20",
+        "date": "2026-10-21",
         "value": 3.75
       },
       "YoY": {
-        "date": "2025-10-20",
+        "date": "2025-10-21",
         "value": 4.0
       },
       "change": {
