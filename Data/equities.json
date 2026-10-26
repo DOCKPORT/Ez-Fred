@@ -1,7 +1,7 @@
 {
   "meta": {
     "category": "Equity Indexes",
-    "generated_utc": "2026-10-23T22:45:04Z",
+    "generated_utc": "2026-10-26T23:27:45Z",
     "series_count": 4,
     "stale_series": []
   },
@@ -13,16 +13,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-10-21",
-        "value": 7757.17
+        "date": "2026-10-23",
+        "value": 7623.68
       },
       "YoY": {
-        "date": "2025-10-21",
-        "value": 6735.35
+        "date": "2025-10-23",
+        "value": 6738.44
       },
       "change": {
         "type": "percent",
-        "value": 15.171
+        "value": 13.1372
       }
     },
     "NASDAQ100": {
@@ -32,16 +32,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-10-22",
-        "value": 28958.69
+        "date": "2026-10-23",
+        "value": 28957.53
       },
       "YoY": {
-        "date": "2025-10-22",
-        "value": 24879.0
+        "date": "2025-10-23",
+        "value": 25097.42
       },
       "change": {
         "type": "percent",
-        "value": 16.3981
+        "value": 15.3805
       }
     },
     "DJIA": {
@@ -51,16 +51,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-10-23",
-        "value": 52215.16
+        "date": "2026-10-26",
+        "value": 52361.58
       },
       "YoY": {
-        "date": "2025-10-23",
-        "value": 46734.61
+        "date": "2025-10-27",
+        "value": 47544.59
       },
       "change": {
         "type": "percent",
-        "value": 11.727
+        "value": 10.1315
       }
     },
     "NIKKEI225": {
@@ -70,16 +70,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-10-23",
-        "value": 62693.16
+        "date": "2026-10-26",
+        "value": 62189.65
       },
       "YoY": {
-        "date": "2025-10-23",
-        "value": 48641.61
+        "date": "2025-10-27",
+        "value": 50512.32
       },
       "change": {
         "type": "percent",
-        "value": 28.8879
+        "value": 23.1178
       }
     }
   }
