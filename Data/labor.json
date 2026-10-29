@@ -1,7 +1,7 @@
 {
   "meta": {
     "category": "Labor Market",
-    "generated_utc": "2026-10-28T23:43:30Z",
+    "generated_utc": "2026-10-29T23:42:39Z",
     "series_count": 7,
     "stale_series": []
   },
@@ -51,16 +51,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-10-17",
+        "date": "2026-10-24",
         "value": 194000.0
       },
       "YoY": {
-        "date": "2025-10-18",
-        "value": 231000.0
+        "date": "2025-10-25",
+        "value": 221000.0
       },
       "change": {
         "type": "percent",
-        "value": -16.0173
+        "value": -12.2172
       }
     },
     "CCSA": {
@@ -70,16 +70,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-10-10",
-        "value": 1728000.0
+        "date": "2026-10-17",
+        "value": 1701000.0
       },
       "YoY": {
-        "date": "2025-10-11",
-        "value": 1947000.0
+        "date": "2025-10-18",
+        "value": 1953000.0
       },
       "change": {
         "type": "percent",
-        "value": -11.2481
+        "value": -12.9032
       }
     },
     "JTSJOL": {

@@ -1,7 +1,7 @@
 {
   "meta": {
     "category": "US Treasury Yields",
-    "generated_utc": "2026-10-28T23:43:30Z",
+    "generated_utc": "2026-10-29T23:42:39Z",
     "series_count": 11,
     "stale_series": []
   },
@@ -13,16 +13,16 @@
         "suffix": "%"
       },
       "latest": {
-        "date": "2026-10-27",
-        "value": 4.1
+        "date": "2026-10-28",
+        "value": 4.07
       },
       "YoY": {
-        "date": "2025-10-27",
-        "value": 4.09
+        "date": "2025-10-28",
+        "value": 4.07
       },
       "change": {
         "type": "absolute",
-        "value": 0.01
+        "value": 0.0
       }
     },
     "DGS3MO": {
@@ -32,16 +32,16 @@
         "suffix": "%"
       },
       "latest": {
-        "date": "2026-10-27",
-        "value": 4.22
+        "date": "2026-10-28",
+        "value": 4.18
       },
       "YoY": {
-        "date": "2025-10-27",
+        "date": "2025-10-28",
         "value": 3.89
       },
       "change": {
         "type": "absolute",
-        "value": 0.33
+        "value": 0.29
       }
     },
     "DGS6MO": {
@@ -51,16 +51,16 @@
         "suffix": "%"
       },
       "latest": {
-        "date": "2026-10-27",
-        "value": 4.34
+        "date": "2026-10-28",
+        "value": 4.32
       },
       "YoY": {
-        "date": "2025-10-27",
-        "value": 3.73
+        "date": "2025-10-28",
+        "value": 3.72
       },
       "change": {
         "type": "absolute",
-        "value": 0.61
+        "value": 0.6
       }
     },
     "DGS1": {
@@ -70,16 +70,16 @@
         "suffix": "%"
       },
       "latest": {
-        "date": "2026-10-27",
-        "value": 4.5
+        "date": "2026-10-28",
+        "value": 4.47
       },
       "YoY": {
-        "date": "2025-10-27",
+        "date": "2025-10-28",
         "value": 3.59
       },
       "change": {
         "type": "absolute",
-        "value": 0.91
+        "value": 0.88
       }
     },
     "DGS2": {
@@ -89,16 +89,16 @@
         "suffix": "%"
       },
       "latest": {
-        "date": "2026-10-27",
-        "value": 4.7
+        "date": "2026-10-28",
+        "value": 4.67
       },
       "YoY": {
-        "date": "2025-10-27",
-        "value": 3.48
+        "date": "2025-10-28",
+        "value": 3.47
       },
       "change": {
         "type": "absolute",
-        "value": 1.22
+        "value": 1.2
       }
     },
     "DGS3": {
@@ -108,11 +108,11 @@
         "suffix": "%"
       },
       "latest": {
-        "date": "2026-10-27",
+        "date": "2026-10-28",
         "value": 4.8
       },
       "YoY": {
-        "date": "2025-10-27",
+        "date": "2025-10-28",
         "value": 3.5
       },
       "change": {
@@ -127,16 +127,16 @@
         "suffix": "%"
       },
       "latest": {
-        "date": "2026-10-27",
-        "value": 4.82
+        "date": "2026-10-28",
+        "value": 4.85
       },
       "YoY": {
-        "date": "2025-10-27",
-        "value": 3.61
+        "date": "2025-10-28",
+        "value": 3.6
       },
       "change": {
         "type": "absolute",
-        "value": 1.21
+        "value": 1.25
       }
     },
     "DGS7": {
@@ -146,16 +146,16 @@
         "suffix": "%"
       },
       "latest": {
-        "date": "2026-10-27",
-        "value": 4.91
+        "date": "2026-10-28",
+        "value": 4.95
       },
       "YoY": {
-        "date": "2025-10-27",
-        "value": 3.79
+        "date": "2025-10-28",
+        "value": 3.77
       },
       "change": {
         "type": "absolute",
-        "value": 1.12
+        "value": 1.18
       }
     },
     "DGS10": {
@@ -165,16 +165,16 @@
         "suffix": "%"
       },
       "latest": {
-        "date": "2026-10-27",
-        "value": 4.99
+        "date": "2026-10-28",
+        "value": 5.05
       },
       "YoY": {
-        "date": "2025-10-27",
-        "value": 4.01
+        "date": "2025-10-28",
+        "value": 3.99
       },
       "change": {
         "type": "absolute",
-        "value": 0.98
+        "value": 1.06
       }
     },
     "DGS20": {
@@ -184,16 +184,16 @@
         "suffix": "%"
       },
       "latest": {
-        "date": "2026-10-27",
-        "value": 5.34
+        "date": "2026-10-28",
+        "value": 5.41
       },
       "YoY": {
-        "date": "2025-10-27",
-        "value": 4.55
+        "date": "2025-10-28",
+        "value": 4.53
       },
       "change": {
         "type": "absolute",
-        "value": 0.79
+        "value": 0.88
       }
     },
     "DGS30": {
@@ -203,16 +203,16 @@
         "suffix": "%"
       },
       "latest": {
-        "date": "2026-10-27",
-        "value": 5.3
+        "date": "2026-10-28",
+        "value": 5.37
       },
       "YoY": {
-        "date": "2025-10-27",
-        "value": 4.57
+        "date": "2025-10-28",
+        "value": 4.55
       },
       "change": {
         "type": "absolute",
-        "value": 0.73
+        "value": 0.82
       }
     }
   }
