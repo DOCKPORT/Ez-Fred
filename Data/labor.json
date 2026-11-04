@@ -1,7 +1,7 @@
 {
   "meta": {
     "category": "Labor Market",
-    "generated_utc": "2026-11-03T01:55:42Z",
+    "generated_utc": "2026-11-04T00:16:37Z",
     "series_count": 7,
     "stale_series": []
   },
@@ -89,16 +89,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-08-01",
-        "value": 7079.0
+        "date": "2026-09-01",
+        "value": 7523.0
       },
       "YoY": {
-        "date": "2025-08-01",
-        "value": 6919.0
+        "date": "2025-09-01",
+        "value": 7169.0
       },
       "change": {
         "type": "percent",
-        "value": 2.3125
+        "value": 4.9379
       }
     },
     "CIVPART": {
