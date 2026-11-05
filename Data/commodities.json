@@ -1,7 +1,7 @@
 {
   "meta": {
     "category": "Commodities",
-    "generated_utc": "2026-11-04T00:16:37Z",
+    "generated_utc": "2026-11-05T00:37:43Z",
     "series_count": 7,
     "stale_series": []
   },
@@ -13,16 +13,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-10-27",
-        "value": 123.1
+        "date": "2026-11-03",
+        "value": 107.03
       },
       "YoY": {
-        "date": "2025-10-27",
-        "value": 65.52
+        "date": "2025-11-03",
+        "value": 65.79
       },
       "change": {
         "type": "percent",
-        "value": 87.8816
+        "value": 62.6843
       }
     },
     "DCOILWTICO": {
@@ -32,16 +32,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-10-27",
-        "value": 103.37
+        "date": "2026-11-03",
+        "value": 99.64
       },
       "YoY": {
-        "date": "2025-10-27",
-        "value": 62.13
+        "date": "2025-11-03",
+        "value": 61.79
       },
       "change": {
         "type": "percent",
-        "value": 66.377
+        "value": 61.2559
       }
     },
     "GASREGW": {
