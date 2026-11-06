@@ -1,7 +1,7 @@
 {
   "meta": {
     "category": "Equity Indexes",
-    "generated_utc": "2026-11-05T00:37:43Z",
+    "generated_utc": "2026-11-06T00:37:58Z",
     "series_count": 4,
     "stale_series": []
   },
@@ -13,16 +13,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-11-03",
-        "value": 7568.92
+        "date": "2026-11-04",
+        "value": 7688.62
       },
       "YoY": {
-        "date": "2025-11-03",
-        "value": 6851.97
+        "date": "2025-11-04",
+        "value": 6771.55
       },
       "change": {
         "type": "percent",
-        "value": 10.4634
+        "value": 13.543
       }
     },
     "NASDAQ100": {
@@ -32,16 +32,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-11-03",
-        "value": 28180.26
+        "date": "2026-11-04",
+        "value": 28437.17
       },
       "YoY": {
-        "date": "2025-11-03",
-        "value": 25972.94
+        "date": "2025-11-04",
+        "value": 25435.7
       },
       "change": {
         "type": "percent",
-        "value": 8.4985
+        "value": 11.8002
       }
     },
     "DJIA": {
@@ -51,16 +51,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-11-04",
-        "value": 53356.12
+        "date": "2026-11-05",
+        "value": 51523.06
       },
       "YoY": {
-        "date": "2025-11-04",
-        "value": 47085.24
+        "date": "2025-11-05",
+        "value": 47311.0
       },
       "change": {
         "type": "percent",
-        "value": 13.3181
+        "value": 8.9029
       }
     },
     "NIKKEI225": {
@@ -70,16 +70,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-11-04",
-        "value": 62188.63
+        "date": "2026-11-05",
+        "value": 61077.9
       },
       "YoY": {
-        "date": "2025-11-04",
-        "value": 51497.2
+        "date": "2025-11-05",
+        "value": 50212.27
       },
       "change": {
         "type": "percent",
-        "value": 20.7612
+        "value": 21.6394
       }
     }
   }
