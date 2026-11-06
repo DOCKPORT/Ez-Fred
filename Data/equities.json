@@ -1,7 +1,7 @@
 {
   "meta": {
     "category": "Equity Indexes",
-    "generated_utc": "2026-11-06T00:37:58Z",
+    "generated_utc": "2026-11-06T23:52:35Z",
     "series_count": 4,
     "stale_series": []
   },
@@ -13,16 +13,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-11-04",
-        "value": 7688.62
+        "date": "2026-11-05",
+        "value": 7353.73
       },
       "YoY": {
-        "date": "2025-11-04",
-        "value": 6771.55
+        "date": "2025-11-05",
+        "value": 6796.29
       },
       "change": {
         "type": "percent",
-        "value": 13.543
+        "value": 8.2021
       }
     },
     "NASDAQ100": {
@@ -32,16 +32,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-11-04",
-        "value": 28437.17
+        "date": "2026-11-05",
+        "value": 26629.81
       },
       "YoY": {
-        "date": "2025-11-04",
-        "value": 25435.7
+        "date": "2025-11-05",
+        "value": 25620.03
       },
       "change": {
         "type": "percent",
-        "value": 11.8002
+        "value": 3.9414
       }
     },
     "DJIA": {
@@ -51,16 +51,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-11-05",
-        "value": 51523.06
+        "date": "2026-11-06",
+        "value": 51285.73
       },
       "YoY": {
-        "date": "2025-11-05",
-        "value": 47311.0
+        "date": "2025-11-06",
+        "value": 46912.3
       },
       "change": {
         "type": "percent",
-        "value": 8.9029
+        "value": 9.3226
       }
     },
     "NIKKEI225": {
@@ -70,16 +70,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-11-05",
-        "value": 61077.9
+        "date": "2026-11-06",
+        "value": 57434.77
       },
       "YoY": {
-        "date": "2025-11-05",
-        "value": 50212.27
+        "date": "2025-11-06",
+        "value": 50883.68
       },
       "change": {
         "type": "percent",
-        "value": 21.6394
+        "value": 12.8746
       }
     }
   }
