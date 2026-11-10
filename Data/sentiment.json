@@ -1,7 +1,7 @@
 {
   "meta": {
     "category": "Sentiment",
-    "generated_utc": "2026-11-06T23:52:35Z",
+    "generated_utc": "2026-11-10T02:28:08Z",
     "series_count": 3,
     "stale_series": []
   },
@@ -13,16 +13,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-11-05",
-        "value": 28.18
+        "date": "2026-11-06",
+        "value": 25.64
       },
       "YoY": {
-        "date": "2025-11-05",
-        "value": 18.01
+        "date": "2025-11-06",
+        "value": 19.5
       },
       "change": {
         "type": "percent",
-        "value": 56.4686
+        "value": 31.4872
       }
     },
     "STLFSI4": {
