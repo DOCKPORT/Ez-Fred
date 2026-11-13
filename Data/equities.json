@@ -1,7 +1,7 @@
 {
   "meta": {
     "category": "Equity Indexes",
-    "generated_utc": "2026-11-12T01:44:15Z",
+    "generated_utc": "2026-11-13T00:48:16Z",
     "series_count": 4,
     "stale_series": []
   },
@@ -13,16 +13,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-11-10",
-        "value": 7520.93
+        "date": "2026-11-11",
+        "value": 7619.38
       },
       "YoY": {
-        "date": "2025-11-10",
-        "value": 6832.43
+        "date": "2025-11-11",
+        "value": 6846.61
       },
       "change": {
         "type": "percent",
-        "value": 10.0769
+        "value": 11.2869
       }
     },
     "NASDAQ100": {
@@ -32,16 +32,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-11-10",
-        "value": 27740.8
+        "date": "2026-11-11",
+        "value": 28374.25
       },
       "YoY": {
-        "date": "2025-11-10",
-        "value": 25611.74
+        "date": "2025-11-11",
+        "value": 25533.49
       },
       "change": {
         "type": "percent",
-        "value": 8.3128
+        "value": 11.1256
       }
     },
     "DJIA": {
@@ -51,16 +51,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-11-11",
-        "value": 52486.49
+        "date": "2026-11-12",
+        "value": 52297.09
       },
       "YoY": {
-        "date": "2025-11-11",
-        "value": 47927.96
+        "date": "2025-11-12",
+        "value": 48254.82
       },
       "change": {
         "type": "percent",
-        "value": 9.5112
+        "value": 8.3769
       }
     },
     "NIKKEI225": {
@@ -70,16 +70,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-11-11",
-        "value": 61248.59
+        "date": "2026-11-12",
+        "value": 60819.36
       },
       "YoY": {
-        "date": "2025-11-11",
-        "value": 50842.93
+        "date": "2025-11-12",
+        "value": 51063.31
       },
       "change": {
         "type": "percent",
-        "value": 20.4663
+        "value": 19.1058
       }
     }
   }
