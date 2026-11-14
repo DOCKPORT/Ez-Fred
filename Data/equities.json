@@ -1,7 +1,7 @@
 {
   "meta": {
     "category": "Equity Indexes",
-    "generated_utc": "2026-11-13T00:48:16Z",
+    "generated_utc": "2026-11-14T00:33:12Z",
     "series_count": 4,
     "stale_series": []
   },
@@ -13,16 +13,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-11-11",
-        "value": 7619.38
+        "date": "2026-11-12",
+        "value": 7592.4
       },
       "YoY": {
-        "date": "2025-11-11",
-        "value": 6846.61
+        "date": "2025-11-12",
+        "value": 6850.92
       },
       "change": {
         "type": "percent",
-        "value": 11.2869
+        "value": 10.8231
       }
     },
     "NASDAQ100": {
@@ -32,16 +32,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-11-11",
-        "value": 28374.25
+        "date": "2026-11-12",
+        "value": 28289.19
       },
       "YoY": {
-        "date": "2025-11-11",
-        "value": 25533.49
+        "date": "2025-11-12",
+        "value": 25517.33
       },
       "change": {
         "type": "percent",
-        "value": 11.1256
+        "value": 10.8627
       }
     },
     "DJIA": {
@@ -51,16 +51,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-11-12",
-        "value": 52297.09
+        "date": "2026-11-13",
+        "value": 52347.55
       },
       "YoY": {
-        "date": "2025-11-12",
-        "value": 48254.82
+        "date": "2025-11-13",
+        "value": 47457.22
       },
       "change": {
         "type": "percent",
-        "value": 8.3769
+        "value": 10.3047
       }
     },
     "NIKKEI225": {
@@ -70,16 +70,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-11-12",
-        "value": 60819.36
+        "date": "2026-11-13",
+        "value": 61142.35
       },
       "YoY": {
-        "date": "2025-11-12",
-        "value": 51063.31
+        "date": "2025-11-13",
+        "value": 51281.83
       },
       "change": {
         "type": "percent",
-        "value": 19.1058
+        "value": 19.2281
       }
     }
   }
