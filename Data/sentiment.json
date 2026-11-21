@@ -1,7 +1,7 @@
 {
   "meta": {
     "category": "Sentiment",
-    "generated_utc": "2026-11-20T01:30:51Z",
+    "generated_utc": "2026-11-21T00:59:33Z",
     "series_count": 3,
     "stale_series": []
   },
@@ -13,16 +13,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-11-18",
-        "value": 24.56
+        "date": "2026-11-19",
+        "value": 28.44
       },
       "YoY": {
-        "date": "2025-11-18",
-        "value": 24.69
+        "date": "2025-11-19",
+        "value": 23.66
       },
       "change": {
         "type": "percent",
-        "value": -0.5265
+        "value": 20.2029
       }
     },
     "STLFSI4": {
@@ -51,16 +51,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-09-01",
-        "value": 48.1
+        "date": "2026-10-01",
+        "value": 48.0
       },
       "YoY": {
-        "date": "2025-09-01",
-        "value": 55.1
+        "date": "2025-10-01",
+        "value": 53.6
       },
       "change": {
         "type": "percent",
-        "value": -12.7042
+        "value": -10.4478
       }
     }
   }
