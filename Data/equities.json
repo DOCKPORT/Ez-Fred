@@ -1,7 +1,7 @@
 {
   "meta": {
     "category": "Equity Indexes",
-    "generated_utc": "2026-11-24T04:30:47Z",
+    "generated_utc": "2026-11-25T03:15:21Z",
     "series_count": 4,
     "stale_series": []
   },
@@ -13,16 +13,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-11-20",
-        "value": 6910.39
+        "date": "2026-11-23",
+        "value": 7237.17
       },
       "YoY": {
-        "date": "2025-11-20",
-        "value": 6538.76
+        "date": "2025-11-24",
+        "value": 6705.12
       },
       "change": {
         "type": "percent",
-        "value": 5.6835
+        "value": 7.935
       }
     },
     "NASDAQ100": {
@@ -51,8 +51,8 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-11-23",
-        "value": 49595.31
+        "date": "2026-11-24",
+        "value": 50018.7
       },
       "YoY": {
         "date": "2025-11-24",
@@ -60,7 +60,7 @@
       },
       "change": {
         "type": "percent",
-        "value": 6.7754
+        "value": 7.6869
       }
     },
     "NIKKEI225": {
