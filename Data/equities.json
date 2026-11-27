@@ -1,7 +1,7 @@
 {
   "meta": {
     "category": "Equity Indexes",
-    "generated_utc": "2026-11-26T02:33:35Z",
+    "generated_utc": "2026-11-27T02:32:17Z",
     "series_count": 4,
     "stale_series": []
   },
@@ -32,16 +32,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-11-24",
-        "value": 26214.17
+        "date": "2026-11-25",
+        "value": 26046.9
       },
       "YoY": {
-        "date": "2025-11-24",
-        "value": 24873.85
+        "date": "2025-11-25",
+        "value": 25018.36
       },
       "change": {
         "type": "percent",
-        "value": 5.3885
+        "value": 4.1111
       }
     },
     "DJIA": {
@@ -70,16 +70,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-11-25",
-        "value": 57011.62
+        "date": "2026-11-26",
+        "value": 57499.16
       },
       "YoY": {
-        "date": "2025-11-25",
-        "value": 48659.52
+        "date": "2025-11-26",
+        "value": 49559.07
       },
       "change": {
         "type": "percent",
-        "value": 17.1644
+        "value": 16.0215
       }
     }
   }
