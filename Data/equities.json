@@ -1,7 +1,7 @@
 {
   "meta": {
     "category": "Equity Indexes",
-    "generated_utc": "2026-11-27T02:32:17Z",
+    "generated_utc": "2026-11-28T02:21:51Z",
     "series_count": 4,
     "stale_series": []
   },
@@ -13,16 +13,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-11-24",
-        "value": 7201.09
+        "date": "2026-11-25",
+        "value": 7182.78
       },
       "YoY": {
-        "date": "2025-11-24",
-        "value": 6705.12
+        "date": "2025-11-25",
+        "value": 6765.88
       },
       "change": {
         "type": "percent",
-        "value": 7.3969
+        "value": 6.1618
       }
     },
     "NASDAQ100": {
@@ -51,16 +51,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-11-25",
-        "value": 50182.95
+        "date": "2026-11-27",
+        "value": 50774.94
       },
       "YoY": {
-        "date": "2025-11-25",
-        "value": 47112.45
+        "date": "2025-11-28",
+        "value": 47716.42
       },
       "change": {
         "type": "percent",
-        "value": 6.5174
+        "value": 6.4098
       }
     },
     "NIKKEI225": {
@@ -70,16 +70,16 @@
         "suffix": ""
       },
       "latest": {
-        "date": "2026-11-26",
-        "value": 57499.16
+        "date": "2026-11-27",
+        "value": 58711.11
       },
       "YoY": {
-        "date": "2025-11-26",
-        "value": 49559.07
+        "date": "2025-11-27",
+        "value": 50167.1
       },
       "change": {
         "type": "percent",
-        "value": 16.0215
+        "value": 17.0311
       }
     }
   }
